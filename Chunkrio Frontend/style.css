@@ -8,17 +8,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    
 }
 htnl {
     height: 100%
 }
 
 body,main {
-    /* width: -moz-fit-content; */
     width: 100%;
-    /* max-width: fit-content; */
-    /* max-width: -moz-fit-content; */
     min-height: 100vh;
  }
 
@@ -101,8 +98,15 @@ body,main {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    margin-left: 11px;
     word-spacing: 1px;
+}
+
+.enter2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    word-spacing: 3px;
 }
 
 .lead {
@@ -112,10 +116,6 @@ body,main {
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
 }
-
-/* .partners {
-    margin-bottom: 64px;
-} */
 
 .get-started {
     width: 240px;
@@ -185,7 +185,7 @@ footer {
     font-size: 24px;
     width: 100%;
     overflow: hidden;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
 }
 
 .text-3 {
@@ -265,8 +265,34 @@ a {
     border :1px solid rgba(69, 63, 63, 0.701);
 }
 
-@media (min-width: 300px) and (max-width: 768px){
-    
+@media (min-width: 300px) and (max-width: 599px){
+    .navi {
+        margin: 0 9px;
+        padding: 0;
+    }
+    .navig {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    .navbar-toggler:hover {
+        border: none;
+    }
+    .register-btns {
+        display: none;
+    }
+    .row {
+        display: block;
+        text-align: center;
+    }
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 80%;
+    }
     .display-3{
         font-size: 27px;
     }
@@ -276,12 +302,6 @@ a {
     .rndn{
         width:90%;
     }
-    .img-fluid.col-lg-2{
-        height: auto;
-        width: 20%;
-        display: flex;
-        justify-content: space-between;
-    }
     .footer-image{
         width: 50%;
     }
@@ -289,3 +309,13 @@ a {
         width: 100%;
     }
 }
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .row {
+        display: flex;
+    } 
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 30%;
+    }
+} 
