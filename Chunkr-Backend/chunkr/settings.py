@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chunkrio.apps.ChunkrioConfig',
-    'users.apps.UsersConfig'
+    'users.apps.UsersConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

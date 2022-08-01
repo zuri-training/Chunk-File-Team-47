@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
+/* #b9b9b7
+    #959693
+    #252621, #2C2D28, #4F504C, 727370, 959693, B9B9B7, FFFFFF, F7F7F7, AAAAAA, 808080, 9CC2FF, 7CAEFF, 5B9AFF, 3A86FF, 3070D4, 2759AA, 93D6AF, 6FC995, 4BBB7B, 27AE60, 219150, 1A7440, F28F8F, EE7373, EB5757, C44949, 762C2C, 4E1D1D, F0DC9D, ECD07C, E7C55C, E2B93B, BC9A31, 977B27
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+htnl {
+    height: 100%
+}
+
+body,main {
+    /* width: -moz-fit-content; */
+    width: 100%;
+    /* max-width: fit-content; */
+    /* max-width: -moz-fit-content; */
+    min-height: 100vh;
+ }
+
+ nav {
+    background-color: #fff;
+    animation: fadeIn; 
+    animation-duration: 2s; 
+}
+
+.navi {
+    margin: 0 80px;
+    padding: 0;
+}
+
+.navbar-nav {
+    gap: 80px;
+} 
+
+.nav-item {
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-family: 'Manrope';
+    font-style: normal;
+    line-height: 19px;
+    display: flex;  
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 27px;
+    margin-bottom: 26px;
+}
+
+.ease {
+    color: #3a86ff;
+}
+
+.collapse {
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 34px;
+}
+
+.sign-in {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+
+.display-3 {
+    font-size: 64px;
+    font-weight: 700;
+    animation: fadeIn; 
+    animation-duration: 3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.display-6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.chunk-create {
+    margin-left: 104px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.enter {
+    width: 443px;
+    height: 19px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 11px;
+    word-spacing: 1px;
+}
+
+.lead {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+}
+
+/* .partners {
+    margin-bottom: 64px;
+} */
+
+.get-started {
+    width: 240px;
+    height: 56px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    margin-left: 23%;
+    margin-top: 24px;
+    margin-bottom: 70px;
+}
+
+.sign-in2 {
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+
+.signin-b {
+    height: 67px;
+}
+
+.figure {
+    height: auto;
+}
+
+.row {
+    justify-content: space-evenly;
+}
+
+.figure-caption>p {
+    color:#4F504C;
+    font-size: 32px;
+    font-family: manrope,sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.figure {
+    background-color: #F7F7F7;
+    border-radius: 16px;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+p.text-1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.row.container-fluid.pt-5.mt-5.text-center.mx-auto {
+    background-image: url(img/bubble-background.png);
+
+}
+
+.pb-4.text-2,p.text-center {
+    font-size: 24px;
+}
+
+.bg-image {
+    background-image: url(img/blue_quote.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer { 
+    background-color:  #24272C;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -15px;
+}
+
+.text-3 {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: manrope,sans-serif;
+}
+
+#exampleModalLabel {
+    font-family: inter,sans-serif;
+}
+
+hr {
+    border-width: 4px;
+    color:#FFFFFF;
+}
+
+span {
+    justify-content: space-around;
+    padding-right: 2vw;
+}
+
+.footer-image {
+    width: 20%;
+}
+
+.modal-content {
+    width: 100%;
+}
+
+input {
+    font-family: manrope,sans-serif;
+    font-size: 12px;  
+}
+
+.modal-dialog { 
+    font-family: manrope,sans-serif;
+}
+
+.modal-header{
+    border-bottom: none;
+    margin-bottom: -3vw;
+}
+
+.text-start{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.close {
+    position: absolute;
+    left: 454px;
+    top: 25px;
+}
+
+.close1 {
+    position: absolute;
+    left: 457px;
+    top: 50px;
+} 
+
+.btn-close { 
+    border: 2px solid #292D32;
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control{
+    background-color: #F7F7F7;
+    color: rgba(69, 63, 63, 0.701);
+    border :1px solid rgba(69, 63, 63, 0.701);
+}
+
+@media (min-width: 300px) and (max-width: 768px){
+    
+    .display-3{
+        font-size: 27px;
+    }
+    .lead{
+        font-size: 17px;
+    }
+    .rndn{
+        width:90%;
+    }
+    .img-fluid.col-lg-2{
+        height: auto;
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-image{
+        width: 50%;
+    }
+    .modal-header{
+        width: 100%;
+    }
+}
