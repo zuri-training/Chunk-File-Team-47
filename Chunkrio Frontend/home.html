@@ -19,7 +19,7 @@
       </div> -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid navi">
-      <div class="">
+      <div class="navig">
         <a class="navbar-brand" href="home.html"><img class="logo" src="img/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
           </li>
         </ul>
       </div>
-      <div class="sign-in">
+      <div class="sign-in register-btns">
         <button type="button" class="btn btn-dark me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Sign In</button>
       </div>
@@ -129,11 +129,11 @@
 
     <!-- Modal 2/Sign In -->
     <div class="modal fade " id="exampleModalToggle2" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
         <div class="modal-content p-2">
           <div class="modal-header2 pb-0">
             <div class="w-100">
-              <h3 class="modal-title mt-5 text-center display-6" id="exampleModalLabel">Welcome!</h3>
+              <h3 class="modal-title mt-4 text-center display-6" id="exampleModalLabel">Welcome!</h3>
               <p class="text-muted chunk-create mb-0 mt-2">Sign into your account with Chunkr.<b class="ease">iO</b></p>
             </div>
             <div class="m-0 p-0 close1">
@@ -174,7 +174,7 @@
 
     <!-- Modal 3/Forgotten Password-->
     <div class="modal fade" id="exampleModalToggle3" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down forgot-p">
+      <div class="modal-dialog modal-dialog-centered my-0 modal-fullscreen-sm-down forgot-p">
         <div class="modal-content w-100 h-100 p-2">
           <div class="modal-header">
             <div class="w-100">
@@ -204,12 +204,12 @@
 
     <!-- Modal 4/Forgotten Password (2)-->
     <div class="modal fade" id="exampleModalToggle4" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog  modal-dialog-centered h-100 modal-fullscreen-sm-down">
+      <div class="modal-dialog modal-dialog-centered h-100 my-0 modal-fullscreen-sm-down">
         <div class="modal-content w-0 p-0 p-2">
           <div class="modal-header">
-            <div class="modalcenter">
+            <div class="modalcenter w-100">
               <h3 class="modal-title display-6 mt-5 text-center" id="exampleModalLabel">Forgotten Password?</h3>
-              <p class="text-muted text-center mt-2 mb-4" style="margin-left:6rem">Enter your new password</p>
+              <h4 class="text-muted text-center mb-0 enter2">Enter your new password</h4>
             </div>
             <div class="m-0 p-0 close">
               <button type="button" class="btn-close m-0 p-0" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -228,13 +228,13 @@
             <!-- confirm password Input -->
             <div class="">
               <p class="text-start">Confirm Password</p>
-              <div class="form-floating  col-12  ">
+              <div class="form-floating  col-12 ">
                 <input type="password" class="form-control" id="floatingPassword" placeholder="Input password" required>
                 <label for="floatingPassword" class="text-start text-muted">Input password</label><br>
               </div>
             </div>
             <div class="mb-5">
-              <button class="btn btn-dark col-12" href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Reset Password</button>
+              <button class="btn btn-dark signin-b col-12 mt-5" href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Reset Password</button>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@
     <div class="row mb-2 pb-5 mt-5 pt-5 mx-0">
       <img class="img-fluid col-lg-3" src="img/ingressive_logo.png" alt="ingressive">
       <img class="img-fluid col-lg-2" src="img/zuri_logo.png" alt="Zuri">
-      <img class="img-fluid col-lg-4 col-md-1 " style="width:25%" src="img/reliance_logo.png" alt="reliance">
+      <img class="img-fluid col-lg-4" src="img/reliance_logo.png" alt="reliance">
     </div>
     <!-- End of logo section -->
 
@@ -467,7 +467,8 @@
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
