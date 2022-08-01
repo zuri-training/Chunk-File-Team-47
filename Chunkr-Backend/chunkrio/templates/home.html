@@ -20,7 +20,7 @@
       </div> -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid navi">
-      <div class="">
+      <div class="navig">
         <a class="navbar-brand" href="home.html">
         {% load static %}
         <img class="logo" src="{% static 'img/logo.png' %}" alt="logo"></a>
@@ -41,7 +41,7 @@
           </li>
         </ul>
       </div>
-      <div class="sign-in">
+      <div class="sign-in register-btns">
         <button type="button" class="btn btn-dark me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2">Sign In</button>
       </div>
@@ -67,7 +67,8 @@
         <div class="modal-content p-2">
           <div class="modal-header mt-n5">
             <div class="w-100 mb-n5">
-              <form method="post">
+              <form method="POST">
+                {% csrf_token %}
               <h3 class="modal-title display-6 text-center pt-0 mb-n4" id="exampleModalLabel">Welcome!</h3>
               <p class="text-muted w-100 mt-2 chunk-create">Create an account with Chunkr.<b class="ease">iO</b></p>
             </div>
@@ -81,7 +82,7 @@
             <div class="">
               <p class="text-start pt-0 mt-n5">Username</p>
               <div class="form-floating col-12 mx-auto ">
-                <input type="name" class="form-control" id="floatingPassword" placeholder="Input Username" required>
+                <input type="name" class="form-control" id="floatingPassword" placeholder="Input Username" name="user-sign" required>
                 <label for="floatingPassword" class="text-start text-muted">Input username</label><br>
               </div>
             </div>
@@ -90,7 +91,7 @@
             <div>
               <p class="text-start">Email Address</p>
               <div class="form-floating  col-12 mx-auto ">
-                <input type="email" class="form-control" id="floatingPassword" placeholder="Input Username" required>
+                <input type="email" class="form-control" id="floatingPassword" placeholder="Input Username" name="email" required>
                 <label for="floatingPassword" class="text-start text-muted">Input email address</label><br>
               </div>
             </div>
@@ -101,7 +102,7 @@
                 <div class="col-6">
                   <p class="text-start">Password</p>
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Input Username" required>
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Input Username" name="password-sign" required>
                     <label for="floatingPassword" class="text-start text-muted">Input password</label><br>
                   </div>
                 </div>
@@ -109,7 +110,7 @@
                 <div class="col-6">
                   <p class="text-start">Confirm Password</p>
                   <div class="form-floating ">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Input Username" required>
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Input Username" name="password-sign" required>
                     <label for="floatingPassword" class="text-start text-muted">Input password</label><br>
                   </div>
                 </div>
@@ -118,12 +119,12 @@
             <div class="mt-4">
               <button class="btn btn-dark col-12 p-3">Sign Up</button>
             </div>
+          </form>
             <br>
             <div class="text-center sign-in2">
               <p>
                 Already have an account?<a href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-target="#exampleModalToggle2" style="text-decoration:none"><b class="ease"> Sign in</b></a>
               </p>
-            </form>
             </div>
           </div>
         </div>
@@ -136,6 +137,8 @@
         <div class="modal-content p-2">
           <div class="modal-header2 pb-0">
             <div class="w-100">
+              <form method="post">
+                {% csrf_token %}
               <h3 class="modal-title mt-5 text-center display-6" id="exampleModalLabel">Welcome!</h3>
               <p class="text-muted chunk-create mb-0 mt-2">Sign into your account with Chunkr.<b class="ease">iO</b></p>
             </div>
@@ -148,7 +151,7 @@
             <div class="user-info">
               <p class="text-start mb-2 mt-4">Username</p>
               <div class="form-floating col-12 mx-auto ">
-                <input type="email" class="form-control m-0 p-0" id="floatingPassword" placeholder="Input email" required>
+                <input type="email" class="form-control m-0 p-0" id="floatingPassword" placeholder="Input email" name="username" required>
                 <label for="floatingPassword" class="text-start text-muted">Input username</label><br>
               </div>
             </div>
@@ -157,7 +160,7 @@
             <div class="user-info">
               <p class="text-start p-0 mb-2">Password</p>
               <div class="form-floating  col-12 mx-auto">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Input password" required>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Input password" name="password" required>
                 <label for="floatingPassword" class="text-start text-muted">Input password</label><br>
               </div>
             </div>
@@ -168,6 +171,7 @@
               <button class="btn btn-dark signin-b col-12 mt-5" type="button">Sign In</button>
             </div>
           </div>
+        </form>
           <div class="text-center">
             <p class="mt-3 mb-4">Don't have an account?<b><a href="#exampleModalToggle2" data-bs-toggle="modal" data-bs-target="#exampleModal"> Sign Up</a></b></p>
           </div>
