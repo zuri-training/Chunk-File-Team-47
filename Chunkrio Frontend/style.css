@@ -7,10 +7,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
+    /* border: 1px solid red; */
 }
-htnl {
+
+html {
     height: 100%
 }
 
@@ -19,6 +20,7 @@ body,main {
     min-height: 100vh;
  }
 
+/* STYLING FOR LANDING PAGE STARTS HERE */
  nav {
     background-color: #fff;
     animation: fadeIn; 
@@ -129,7 +131,7 @@ body,main {
 
 .sign-in2 {
     margin-top: -10px;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
 
 .signin-b {
@@ -225,9 +227,13 @@ input {
     font-family: manrope,sans-serif;
 }
 
-.modal-header{
+.modal-header {
     border-bottom: none;
     margin-bottom: -3vw;
+}
+
+.username-mod1 {
+    margin-top: -5px;
 }
 
 .text-start{
@@ -246,7 +252,7 @@ input {
 .close1 {
     position: absolute;
     left: 457px;
-    top: 50px;
+    top: 30px;
 } 
 
 .btn-close { 
@@ -264,7 +270,9 @@ a {
     color: rgba(69, 63, 63, 0.701);
     border :1px solid rgba(69, 63, 63, 0.701);
 }
+/* STYLING FOR LANDING PAGE ENDS HERE */
 
+/* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
 @media (min-width: 300px) and (max-width: 599px){
     .navi {
         margin: 0 9px;
@@ -293,19 +301,19 @@ a {
         height: auto;
         width: 80%;
     }
-    .display-3{
+    .display-3 {
         font-size: 27px;
     }
-    .lead{
+    .lead {
         font-size: 17px;
     }
-    .rndn{
+    .rndn {
         width:90%;
     }
-    .footer-image{
+    .footer-image {
         width: 50%;
     }
-    .modal-header{
+    .modal-header {
         width: 100%;
     }
 }
@@ -319,3 +327,4 @@ a {
         width: 30%;
     }
 } 
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
