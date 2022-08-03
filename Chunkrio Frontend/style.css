@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 /* #b9b9b7
     #959693
     #252621, #2C2D28, #4F504C, 727370, 959693, B9B9B7, FFFFFF, F7F7F7, AAAAAA, 808080, 9CC2FF, 7CAEFF, 5B9AFF, 3A86FF, 3070D4, 2759AA, 93D6AF, 6FC995, 4BBB7B, 27AE60, 219150, 1A7440, F28F8F, EE7373, EB5757, C44949, 762C2C, 4E1D1D, F0DC9D, ECD07C, E7C55C, E2B93B, BC9A31, 977B27
@@ -260,11 +261,13 @@ input {
 a {
     text-decoration: none;
 }
-
-.form-control{
-    background-color: #F7F7F7;
-    color: rgba(69, 63, 63, 0.701);
-    border :1px solid rgba(69, 63, 63, 0.701);
+.input-group-text{
+    background-color: white;
+}
+.input-group{
+    width: 50vw;
+    height: 4.5vw;
+    border-radius: 56px;
 }
 
 @media (min-width: 300px) and (max-width: 599px){
