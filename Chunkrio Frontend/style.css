@@ -175,7 +175,9 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size: cover;
+    background-size:contain;
+    margin-left: 2.5vw;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -270,6 +272,12 @@ a {
         margin: 0 9px;
         padding: 0;
     }
+    .bg-image {
+        background-image: none;
+    }
+    .figure{
+        width: 100%;
+    }
     .navig {
         display: flex;
         justify-content: space-between;
@@ -288,22 +296,25 @@ a {
     .row {
         display: block;
         text-align: center;
+        margin-top: -35px;
     }
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
-        width: 80%;
+        margin-bottom: 55px;
+        width: 60%;
     }
     .display-3{
-        font-size: 27px;
+        font-size: 24px;
+        padding-top: -35px;
     }
     .lead{
-        font-size: 17px;
+        font-size: 14px;
     }
     .rndn{
         width:90%;
     }
     .footer-image{
-        width: 50%;
+        width: 70%;
     }
     .modal-header{
         width: 100%;
@@ -313,9 +324,13 @@ a {
 @media (min-width: 600px) and (max-width: 991px) {
     .row {
         display: flex;
+        margin-top: -22px;
     } 
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
         width: 30%;
+    }
+    .footer-image{
+        width: 40%;
     }
 } 
