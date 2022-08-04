@@ -264,6 +264,7 @@ input {
 a {
     text-decoration: none;
 }
+<<<<<<< Updated upstream
 
 .form-control{
     background-color: #F7F7F7;
@@ -271,6 +272,19 @@ a {
     border :1px solid rgba(69, 63, 63, 0.701);
 }
 /* STYLING FOR LANDING PAGE ENDS HERE */
+=======
+.input-group-text{
+    background-color: white;
+}
+.input-group{
+    width: 40vw;
+    height: 4.5vw;
+    border-radius: 56px;
+}
+li{
+    list-style-type: none;
+}
+>>>>>>> Stashed changes
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
 @media (min-width: 300px) and (max-width: 599px){
