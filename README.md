@@ -1,4 +1,4 @@
-Chunk.io
+Chunkr.io
 This is a platform that accepts CSV or JSON large files, and break them into smaller bits. Read below for better understanding. ⬇
 
 
@@ -53,6 +53,8 @@ Our default data retention policy is for all content (uploaded files and output 
 
 Contact us! Send us a message here, or email us at team47@chunkr.io
 
-
+PRESENTATION LINK
+https://drive.google.com/file/d/1sEwix7vV4uR4hH5LHxX_bNMeaFReoiaI/view?usp=sharing
+https://i4gxzuriprojectphase.slack.com/files/U03NZFL5FKR/F03RQK82A76/team47_chunk_file.mp4
 
 
