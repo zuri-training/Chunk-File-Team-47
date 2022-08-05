@@ -12,51 +12,60 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
-  <div class="row h-100 w-100">
+  <div class="container-fluid">
+  <div class="row flex-nowrap ">
 
     <!-- Split file section -->
-    <div class="col-3">
-      <div class="text-center mb-5">
-        <a class="navbar-brand" href="home.html"><img class="img-fluid logo w-50 pt-4" src="img/logo.png" alt=""></a>
+    <div class=" col-auto col-md-3 col-xl-3 px-sm-2 px-0 ">
+      <div class="">
+      <div class="text-center mx-auto ">
+        <a class="navbar-brand" href="home.html"><img class="logo mt-5 pt-1 mb-5 pb-3" src="img/logo.png" alt=""></a>
       </div>
       <!-- Split file dark button -->
-      <div class="text-center mx-auto mb-5">
-      <button type="button col-4" class="btn btn-dark btn-lg col-9 pt-2 pb-2 mx-auto " data-bs-toggle="modal"
-      data-bs-target="#exampleModal">Split File</button><br>
+
+      <div class="mb-lg-5 mb-sm-0 p ">
+
+        <!-- Only the icon remains on small devices,yet to remove the dark background on small screens and arrangements(on large and small screens) -->
+      <button type="button" class="btn btn-dark btn-lg  pt-lg-2 pt-sm-0 pb-lg-2 pb-sm-0 d-grid align-middle mx-auto py-2 " data-bs-toggle="modal"
+      data-bs-target="#exampleModal"><span class="mx-auto"><img src="./img/Split file.svg"class="d-grid d-sm-inline pb-1"alt=""/><span class="d-none d-sm-inline mx-auto p-3 fs-4">Split File</span></span></button>
     </div>
-    <div class="px-4">
-      <ol class="">
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/files.png"alt=""/> All Files</li></a>
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Share files.png"alt=""/> Shared Files</li></a>
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Recents.png"alt=""/> Recent</li></a>
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Stared.png"alt=""/> Starred</li></a>
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/trash.png"alt=""/> Trash</li></a>
-        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/help.png"alt=""/> Help & Feedback</li></a>
-        <a href="#"><li class="h4 text-dark py-2 px-2 fw-normal"><img src="img/Cloud.png"alt=""/> Cloud Storage</li></a>
+    <div class="px-2">
+      <ol class="align-items-center align-items-sm-start " >
+
+        <!-- d-none d-sm-inline is used to hide the texts on small devices-->
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/files.png"alt=""/> <span class="d-none d-sm-inline">All Files</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Share files.png"alt=""/> <span class="d-none d-sm-inline">Shared Files</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Recents.png"alt=""/> <span class="d-none d-sm-inline">Recent</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/Stared.png"alt=""/> <span class="d-none d-sm-inline">Starred</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/trash.png"alt=""/> <span class="d-none d-sm-inline">Trash</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 fw-normal"><img src="img/help.png"alt=""/> <span class="d-none d-sm-inline">Help & Feedback</span></li></a>
+        <a href="#"><li class="h4 text-dark py-2 px-lg-4 px-sm-0 fw-normal"><img src="img/Cloud.png"alt=""/> <span class="d-none d-sm-inline">Cloud storage</span></li></a>
         <!-- Progress bar,insert later -->
 
       </ol>
-      <span class="span text-center">
-        <p class=" ">20GB USED</p>
-        <p class=" ">20GB USED</p>
-      </span>
-      <div class="text-center mx-auto">
-        <button type="button col-4" class="btn btn-dark btn-lg col-8 pt-2 pb-2 mx-auto " data-bs-toggle="modal"
+      <p class="px-5">
+        <span class="d-none d-sm-inline-block ">20GB USED</span>
+        <span class="d-none d-sm-inline-block ">20GB USED</span>
+      </p>
+      <!-- Manage button disappears on small devices -->
+      <div class=" d-none d-sm-inline ">
+        <button type="button" class="btn btn-dark btn-lg col-8 pt-2 pb-2 mx-auto d-grid " data-bs-toggle="modal"
         data-bs-target="#exampleModal">Manage</button><br><br>
       </div>
+    </div>
     </div>
 
   </div>
 
 
     <!-- main section -->
-    <div class="col-9">
+    <div class="col">
 
       <!-- Navigation section -->
       <div class="navbar navbar-expand-lg pt-0">
         <!-- Hamburger icon  -->
-        <button class="navbar-toggler text-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-5"></span>
          </button>
          <div class="" id="navbarNavDropdown">
           <ul class="navbar-nav">
@@ -71,10 +80,10 @@
                   <input type="text" class="form-control rounded-pill-end"style="border-left:0px" placeholder="Search files" aria-label="Input group example" aria-describedby="basic-addon1">
                 </div>
             </li>
-            <li class="nav-item mb-3"><img src="./img/Setting.png"alt=""/></li>
-            <li class="nav-item mb-3"><img src="./img/notification.png"alt=""/></li>
-            <li class="nav-item"><p>John Doe</p> </li>
-            <a class="nav-link dropdown-toggle pt-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="max-width: 150px;"aria-expanded="false">
+            <li class="nav-item mb-3"><img src="./img/Setting.png"alt=""class=""/></li>
+            <li class="nav-item mb-3 "><img src="./img/notification.svg"alt=""class=""style="margin-left:-65px"/></li>
+            <li class="nav-item"><p style="margin-left:-95px">John Doe</p> </li>
+            <a class="nav-link dropdown-toggle pt-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="max-width: 250px;margin-left: -85px;"aria-expanded="false">
                   
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -88,49 +97,114 @@
       </div>
       <p class="h2">Welcome,<b class="ease">John Doe</b></p>
       <hr style="color:black ;border-width:2px">
-      <div>
-        <p class="h2">All Files </p>
+      <!-- Filter,grid -->
+      <div >
+        <p class="h3">All Files<span><span class="float-end fs-6  d-none d-sm-inline p-2">Grid View</span><img src="img/Grid.png"class="float-end p-2 "alt=""/></span>
+          <span><span class="float-end fs-6 p-2 d-none d-sm-inline">Filter</span><img src="img/Filter funnel.svg"class="float-end p-2 "alt=""/></span> 
+        </p>
         <hr style="color:black ;border-width:2px">
       </div>
       <!-- Files Section -->
       <div class="">
       <p class="h4">Easy Access</p>
-      <div class="row">
-        <div class="col-2 rounded"style="background-color:#cae5d6">
-          <img src="./img/CSV file.png"class="img-fluid  mx-auto d-block pt-4"alt=""/>
-          <br>
-          <div class="progress  mb-3">
-            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      <div class="row mb-2 gap-5 ">
+        <!-- first file,csv -->
+        <div class="col-lg-2 col-sm-4 rounded"style="background-color:#cae5d6">
+          <img src="./img/CSV file.png"class="img-fluid mb-2 mx-auto d-block pt-3"alt=""/>
+          <!-- Progress label -->
+          <p>9.37GB</p>
+                    <!-- Progress section -->
+          <div class="progress  mb-2">
+            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <p>Last Updated: 22/07/22</p>
+          <p class="files">Last Updated: 22/07/22</p>
           
         </div>
-        <div class="col-2 rounded"style="background-color:#d3d6eb">
-          <img src="./img/JSON.png"class="img-fluid d-block mx-auto pt-4"alt=""/>
-          <br>
-          <div class="progress mb-3">
-            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-          </div>
-          <p>Last Updated: 22/07/22</p>
-        </div>
-        <div class="col-2 rounded"style="background-color:#d2d7eb">
-          <img src="./img/JSON.png"class="img-fluid d-block pt-4 mx-auto"alt=""/>
-          <br>
-          <div class="progress  mb-3">
-            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-          </div>
-          <p class>Last Updated: 22/07/22</p>
-        </div>
-        
-        <div class="col-3">
+        <!-- second file,json -->
+        <div class="col-lg-2 col-sm-4 rounded"style="background-color:#d3d6eb">
+          <img src="./img/JSON.png"class="img-fluid  mb-2 d-block mx-auto pt-3"alt=""/>
 
+          <!-- Progress label -->
+          <p class=" ">10.45GB</p>
+                    <!-- Progress section -->
+          <div class="progress mb-2 ">
+            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="files">Last Updated: 22/07/22</p>
         </div>
+        <!-- third file,coming soon -->
+        <div class="col-lg-2 col-sm-4 rounded "style="background-color:#d2d7eb">
+          <img src="./img/JSON.png"class="img-fluid  mb-2 d-block pt-3 mx-auto"alt=""/>
 
-      </div>
+          <!-- Progress label -->
+          <p>10.45GB</p>
+
+          <!-- Progress section -->
+          <div class="progress  mb-2">
+            <div class="progress-bar"role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="files mb-2">Last Updated: 22/07/22</p>
+        </div>
+        <div class="col-3 ">
+        </div>
     </div>
-
+         </div>
+                 <!-- folder section -->
+                 <p class="h4">Folders</p>
+                 <div class="row">
+                   <div class="col">
+                     <div>
+                      <figure class="figure">
+                        <img src="./img/CSV file.png"alt=""class=""/>
+                        <figcaption class="figure-caption">
+                          <p class="fs-6">Renovation.csv</p>
+                        </figcaption>
+                      </figure>
+                     </div>
+                   </div>
+                   <div class="col">
+                    <div>
+                     <figure class="figure">
+                       <img src="./img/CSV file.png"alt=""class="text-start"/>
+                       <figcaption class="figure-caption">
+                         <p class="fs-6">Renovation.csv</p>
+                       </figcaption>
+                     </figure>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                     <figure class="figure">
+                       <img src="./img/CSV file.png"alt=""class="text-start"/>
+                       <figcaption class="figure-caption">
+                         <p class="fs-6">Renovation.csv</p>
+                       </figcaption>
+                     </figure>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                     <figure class="figure">
+                       <img src="./img/CSV file.png"alt=""class="text-start"/>
+                       <figcaption class="figure-caption">
+                         <p class="fs-6">Renovation.csv</p>
+                       </figcaption>
+                     </figure>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div>
+                     <figure class="figure">
+                       <img src="./img/CSV file.png"alt=""class="text-start"/>
+                       <figcaption class="figure-caption">
+                         <p class="fs-6 ">Renovation.csv</p>
+                       </figcaption>
+                     </figure>
+                    </div>
+                  </div>
+         
+                 </div>
       </div>
-      <hr style="color:black ;border-width:2px">
     </div>
   </div>
 
