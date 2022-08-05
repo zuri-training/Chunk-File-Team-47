@@ -205,10 +205,7 @@ hr {
     color:#FFFFFF;
 }
 
-span {
-    justify-content: space-around;
-    padding-right: 2vw;
-}
+
 
 .footer-image {
     width: 20%;
@@ -264,15 +261,6 @@ input {
 a {
     text-decoration: none;
 }
-<<<<<<< Updated upstream
-
-.form-control{
-    background-color: #F7F7F7;
-    color: rgba(69, 63, 63, 0.701);
-    border :1px solid rgba(69, 63, 63, 0.701);
-}
-/* STYLING FOR LANDING PAGE ENDS HERE */
-=======
 .input-group-text{
     background-color: white;
 }
@@ -284,7 +272,12 @@ a {
 li{
     list-style-type: none;
 }
->>>>>>> Stashed changes
+.col-2.rounded>p{
+    margin-bottom: -1.7px;
+}
+.files{
+    font-size: 12px;
+}
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
 @media (min-width: 300px) and (max-width: 599px){
@@ -307,10 +300,11 @@ li{
     .register-btns {
         display: none;
     }
-    .row {
+    
+    /* .row {
         display: block;
         text-align: center;
-    }
+    } */
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
         width: 80%;
