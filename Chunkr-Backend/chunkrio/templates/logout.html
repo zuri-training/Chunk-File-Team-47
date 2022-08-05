@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
 
+{% block content %}
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <main>
     <!-- First Section  -->
@@ -13,11 +13,7 @@
       <p class="lead mt-n5"> 
         options to edit how these files would be seperated.
       </p>
-      {% if user.is_authenticated %}
-      <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
-      {% else %}
       <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
-      {% endif %}
     </div>
 
     <!-- Logo Section/Second Section -->
@@ -83,11 +79,7 @@
             </figcaption>
           </figure>
         </div>
-        {% if user.is_authenticated %}
-        <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
-        {% else %}
         <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
-        {% endif %}
 
       </div>
       <!-- End of Third Section -->
@@ -165,29 +157,18 @@
 
       <div class="container-fluid text-center ">
         <div class="text-center">
-          {% if user.is_authenticated %}
           <p class="display-3">
-            Welcome <b class="ease">{{user.username}}</b>
+            Sign up to get <b class="ease">started</b>
           </p>
-          <p class="pt-2 mb-n2 mb-0" style="font-size:20px;">
+          <p class="pt-2 mb-n2 mb-0" style="font-size:20px ;">
             Never lose your files again while keeping track of your shared files.
           </p>
+          <p class="pt-0 mb-0" style="font-size:20px ;">
+            Join thousands of industry professionals using the
+          <p style="font-size:20px ;">gold standard in splitting technology.</p>
+          </p>
           <div class="mb-5 pb-4">
-            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'userprofile' %}">Visit Dashboard</a></button>
-            {% else %}
-            <p class="display-3">
-              Sign up to get <b class="ease">started</b>
-            </p>
-            <p class="pt-2 mb-n2 mb-0" style="font-size:20px;">
-              Never lose your files again while keeping track of your shared files.
-            </p>
-            <p class="pt-0 mb-0" style="font-size:20px ;">
-              Join thousands of industry professionals using the
-            <p style="font-size:20px ;">gold standard in splitting technology.</p>
-            </p>
-            <div class="mb-5 pb-4">
-              <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
-              {% endif %}
+            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
           </div>
         </div>
       </div>
@@ -195,5 +176,4 @@
   <!-- End of Sixth Section -->
 
 
-
-{% endblock content %}
+{% endblock %}
