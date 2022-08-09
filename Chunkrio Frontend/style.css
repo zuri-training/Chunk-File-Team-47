@@ -85,12 +85,16 @@ body,main {
     font-size: 40px;
 }
 
+.signup-page {
+    margin-top: -12px;
+}
+
 .chunk-create {
-    margin-left: 104px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    color: #959693
 }
 
 .enter {
@@ -99,8 +103,9 @@ body,main {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     word-spacing: 1px;
+    color: #959693
 }
 
 .enter2 {
@@ -239,10 +244,17 @@ input {
 }
 
 .sign-up-form {
-    border: 1px solid #0F0F0D;
-    border-radius: 10px;
+    box-shadow: 0px 4px 32px -2px rgba(46, 45, 45, 0.15);
+    border-radius: 16px;
 }
 
+.form-control{
+    background: #F7F7F7;
+}
+
+.p-reset {
+    margin-bottom: 70px;
+}
 /* .close {
     position: absolute;
     left: 454px;
@@ -265,11 +277,11 @@ a {
     text-decoration: none;
 }
 
-.input-group-text{
+.input-group-text {
     background-color: white;
 }
 
-.input-group{
+.input-group {
     width: 40vw;
     height: 4.5vw;
     border-radius: 56px;
@@ -287,6 +299,21 @@ li {
 }
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
+@media (min-width: 600px) and (max-width: 991px) {
+    .row {
+        display: flex;
+    } 
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 30%;
+    }  .display-6 {
+        font-size: 30px;
+    }
+    .enter {
+        font-size: 13px;
+    }
+} 
+
 @media (min-width: 300px) and (max-width: 599px){
     .navi {
         margin: 0 9px;
@@ -332,14 +359,24 @@ li {
         width: 100%;
     }
 }
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .row {
-        display: flex;
-    } 
-    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
-        height: auto;
-        width: 30%;
+ 
+@media (min-width: 320px) and (max-width: 425px) {
+    .text-start.sign-up, .dont-have {
+        font-size: 13px;
     }
-} 
+    .chunk-create {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .display-6 {
+        font-size: 26px;
+    }
+    .enter {
+        font-size: 13px;
+    }
+    .forgot-p {
+        font-size: 20px;
+    }
+}
+
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
