@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
-/* #b9b9b7
-    #959693
-    #252621, #2C2D28, #4F504C, 727370, 959693, B9B9B7, FFFFFF, F7F7F7, AAAAAA, 808080, 9CC2FF, 7CAEFF, 5B9AFF, 3A86FF, 3070D4, 2759AA, 93D6AF, 6FC995, 4BBB7B, 27AE60, 219150, 1A7440, F28F8F, EE7373, EB5757, C44949, 762C2C, 4E1D1D, F0DC9D, ECD07C, E7C55C, E2B93B, BC9A31, 977B27
- */
-* {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
@@ -182,7 +180,9 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size: cover;
+    background-size:contain;
+    margin-left: 2.5vw;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -276,6 +276,15 @@ input {
 a {
     text-decoration: none;
 }
+/* responsive_Landing */
+.input-group-text{
+    background-color: white;
+}
+.input-group{
+    width: 50vw;
+    height: 4.5vw;
+    border-radius: 56px;
+
 
 .input-group-text {
     background-color: white;
@@ -290,12 +299,82 @@ a {
 li {
     list-style-type: none;
 }
-.col-2.rounded>p {
+/* faq */
+.col-2.rounded {
     margin-bottom: -1.7px;
 }
 
+/* main */
+
 .files{
     font-size: 12px;
+}
+.progress{
+    height: 6%;
+}
+
+.dropdown-menu[data-bs-popper] {
+        top: 100%;
+        right: 0;
+        left: 64%;
+        margin-top: var(--bs-dropdown-spacer);
+        width: 250px;
+    }
+    
+/* Create a container using css properties */
+.container {
+
+	left:10%;
+	position: absolute;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+li.h4.text-dark.py-3.fw-normal:hover{
+    background-color: #F7F7F7;
+    border-left: 4px solid black;
+}
+
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+	position: relative;
+	display: inline-block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 9rem;
+	margin:1.5rem;
+	border: 1.2rem solid black;
+	border-left-color: #3a86ff;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+
+/* Apply css properties to ui-widgets
+class and ui-values class */
+.ui-widgets .ui-values {
+	top: 40px;
+	position: absolute;
+	left: 2px;
+	right: 0;
+	font-weight: 700;
+	font-size: 2.0rem;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-labels class */
+.ui-widgets .ui-labels {
+	left: 0;
+	bottom: -16px;
+	text-shadow: 0 0 4px grey;
+	color:black;
+	position: absolute;
+	width: 100%;
+	font-size: 16px;
+}
+.progress-labels{
+    margin-bottom: -3.5px;
 }
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
@@ -319,6 +398,12 @@ li {
         margin: 0 9px;
         padding: 0;
     }
+    .bg-image {
+        background-image: none;
+    }
+    .figure{
+        width: 100%;
+    }
     .navig {
         display: flex;
         justify-content: space-between;
@@ -338,28 +423,47 @@ li {
     /* .row {
         display: block;
         text-align: center;
+        margin-top: -35px;
+    }
+
     } */
+
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
-        width: 80%;
+        margin-bottom: 55px;
+        width: 60%;
     }
+
+    .display-3{
+        font-size: 24px;
+        padding-top: -35px;
+    }
+    .lead{
+        font-size: 14px;
+
     .display-3 {
         font-size: 27px;
     }
     .lead {
         font-size: 17px;
+
     }
     .rndn {
         width:90%;
     }
+
+    .footer-image{
+        width: 70%;
+
     .footer-image {
         width: 50%;
+
     }
     .modal-header {
         width: 100%;
     }
 }
- 
+ /* signup */
 @media (min-width: 320px) and (max-width: 425px) {
     .text-start.sign-up, .dont-have {
         font-size: 13px;
@@ -380,3 +484,27 @@ li {
 }
 
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
+
+    .ui-widgets{
+        border:none
+    }
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .row {
+        display: flex;
+        margin-top: -22px;
+    } 
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 30%;
+    }
+
+    .footer-image{
+        width: 40%;
+    }
+} 
+
+} 
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
+
+
