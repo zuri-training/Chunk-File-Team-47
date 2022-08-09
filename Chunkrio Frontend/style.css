@@ -196,38 +196,36 @@ footer {
     font-family: manrope,sans-serif;
 }
 
-#exampleModalLabel {
+/* #exampleModalLabel {
     font-family: inter,sans-serif;
-}
+} */
 
 hr {
     border-width: 4px;
     color:#FFFFFF;
 }
 
-
-
 .footer-image {
     width: 20%;
 }
 
-.modal-content {
+/* .modal-content {
     width: 100%;
-}
+} */
 
 input {
     font-family: manrope,sans-serif;
     font-size: 12px;  
 }
 
-.modal-dialog { 
+/* .modal-dialog { 
     font-family: manrope,sans-serif;
-}
+} */
 
-.modal-header {
+/* .modal-header {
     border-bottom: none;
     margin-bottom: -3vw;
-}
+} */
 
 .username-mod1 {
     margin-top: -5px;
@@ -240,7 +238,12 @@ input {
     font-size: 16px;
 }
 
-.close {
+.sign-up-form {
+    border: 1px solid #0F0F0D;
+    border-radius: 10px;
+}
+
+/* .close {
     position: absolute;
     left: 454px;
     top: 25px;
@@ -256,22 +259,31 @@ input {
     border: 2px solid #292D32;
     width: 20px;
     height: 20px;
-}
+} */
 
 a {
     text-decoration: none;
 }
+
 .input-group-text{
     background-color: white;
 }
+
 .input-group{
     width: 40vw;
     height: 4.5vw;
     border-radius: 56px;
 }
-li{
+
+li {
     list-style-type: none;
 }
+/* faq */
+.col-2.rounded>p {
+    margin-bottom: -1.7px;
+}
+
+/* main */
 
 .files{
     font-size: 12px;
