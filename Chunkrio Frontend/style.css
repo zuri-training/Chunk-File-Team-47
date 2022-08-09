@@ -278,12 +278,81 @@ a {
 li {
     list-style-type: none;
 }
+/* faq */
 .col-2.rounded>p {
     margin-bottom: -1.7px;
 }
 
+/* main */
+
 .files{
     font-size: 12px;
+}
+.progress{
+    height: 6%;
+}
+
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        right: 0;
+        left: 64%;
+        margin-top: var(--bs-dropdown-spacer);
+        width: 250px;
+    }
+/* Create a container using css properties */
+.container {
+
+	left:10%;
+	position: absolute;
+	text-align: center;
+	transform: translate(-50%, -50%);
+}
+
+li.h4.text-dark.py-3.fw-normal:hover{
+    background-color: #F7F7F7;
+    border-left: 4px solid black;
+}
+
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+	position: relative;
+	display: inline-block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 9rem;
+	margin:1.5rem;
+	border: 1.2rem solid black;
+	border-left-color: #3a86ff;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+
+
+/* Apply css properties to ui-widgets
+class and ui-values class */
+.ui-widgets .ui-values {
+	top: 40px;
+	position: absolute;
+	left: 2px;
+	right: 0;
+	font-weight: 700;
+	font-size: 2.0rem;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-labels class */
+.ui-widgets .ui-labels {
+	left: 0;
+	bottom: -16px;
+	text-shadow: 0 0 4px grey;
+	color:black;
+	position: absolute;
+	width: 100%;
+	font-size: 16px;
+}
+.progress-labels{
+    margin-bottom: -3.5px;
 }
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
@@ -331,7 +400,10 @@ li {
     .modal-header {
         width: 100%;
     }
-}
+    .ui-widgets{
+        border:none
+    }
+
 
 @media (min-width: 600px) and (max-width: 991px) {
     .row {
@@ -342,4 +414,4 @@ li {
         width: 30%;
     }
 } 
-/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
