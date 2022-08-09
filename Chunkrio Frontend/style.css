@@ -302,7 +302,7 @@ li {
     font-size: 12px;
 }
 
-.progress{
+.progress {
     height: 6%;
 }
 
@@ -314,12 +314,12 @@ li {
         width: 250px;
     }
 /* Create a container using css properties */
-.container {
+/* .container {
 	left:10%;
 	position: absolute;
 	text-align: center;
 	transform: translate(-50%, -50%);
-}
+} */
 
 li.h4.text-dark.py-3.fw-normal:hover{
     background-color: #F7F7F7;
