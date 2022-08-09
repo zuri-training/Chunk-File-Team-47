@@ -275,7 +275,7 @@ a {
     width: 50vw;
     height: 4.5vw;
     border-radius: 56px;
-
+}
 
 .input-group-text{
     background-color: white;
@@ -415,7 +415,7 @@ class and ui-labels class */
     }
     .lead{
         font-size: 14px;
-
+    }
     .display-3 {
         font-size: 27px;
     }
@@ -429,10 +429,9 @@ class and ui-labels class */
 
     .footer-image{
         width: 70%;
-
+    }
     .footer-image {
         width: 50%;
-
     }
     .modal-header {
         width: 100%;
@@ -458,5 +457,5 @@ class and ui-labels class */
 } 
 
 } 
-/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
 
