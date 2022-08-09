@@ -3,7 +3,7 @@ Created the project boilerplate on the backend, installed django and other depen
 
 https://github.com/zuri-training/Chunk-File-Team-47/issues/20
 Database Setup( Configured Mongodb with Django) Using Mongodb Atlas
-Created the schema
+Created the database schema
 
 https://github.com/zuri-training/Chunk-File-Team-47/issues/25
 Integrated the frontend with the backend and rendered static files
