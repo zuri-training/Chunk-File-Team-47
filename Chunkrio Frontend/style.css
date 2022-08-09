@@ -284,7 +284,7 @@ a {
     width: 50vw;
     height: 4.5vw;
     border-radius: 56px;
-
+}
 
 .input-group-text {
     background-color: white;
@@ -299,6 +299,7 @@ a {
 li {
     list-style-type: none;
 }
+
 /* faq */
 .col-2.rounded {
     margin-bottom: -1.7px;
@@ -306,9 +307,10 @@ li {
 
 /* main */
 
-.files{
+.files {
     font-size: 12px;
 }
+
 .progress{
     height: 6%;
 }
@@ -323,7 +325,6 @@ li {
     
 /* Create a container using css properties */
 .container {
-
 	left:10%;
 	position: absolute;
 	text-align: center;
@@ -349,8 +350,6 @@ li.h4.text-dark.py-3.fw-normal:hover{
 	box-sizing: border-box;
 }
 
-
-
 /* Apply css properties to ui-widgets
 class and ui-values class */
 .ui-widgets .ui-values {
@@ -373,6 +372,7 @@ class and ui-labels class */
 	width: 100%;
 	font-size: 16px;
 }
+
 .progress-labels{
     margin-bottom: -3.5px;
 }
@@ -419,14 +419,13 @@ class and ui-labels class */
     .register-btns {
         display: none;
     }
+}
     
     /* .row {
         display: block;
         text-align: center;
         margin-top: -35px;
     }
-
-    } */
 
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
@@ -462,7 +461,7 @@ class and ui-labels class */
     .modal-header {
         width: 100%;
     }
-}
+    
  /* signup */
 @media (min-width: 320px) and (max-width: 425px) {
     .text-start.sign-up, .dont-have {
@@ -482,7 +481,6 @@ class and ui-labels class */
         font-size: 20px;
     }
 }
-
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
 
     .ui-widgets{
@@ -498,13 +496,10 @@ class and ui-labels class */
         height: auto;
         width: 30%;
     }
-
     .footer-image{
         width: 40%;
     }
 } 
-
-} 
-/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
 
 
