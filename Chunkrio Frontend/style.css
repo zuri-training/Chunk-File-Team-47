@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 /* #b9b9b7
     #959693
     #252621, #2C2D28, #4F504C, 727370, 959693, B9B9B7, FFFFFF, F7F7F7, AAAAAA, 808080, 9CC2FF, 7CAEFF, 5B9AFF, 3A86FF, 3070D4, 2759AA, 93D6AF, 6FC995, 4BBB7B, 27AE60, 219150, 1A7440, F28F8F, EE7373, EB5757, C44949, 762C2C, 4E1D1D, F0DC9D, ECD07C, E7C55C, E2B93B, BC9A31, 977B27
@@ -177,7 +178,9 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size: cover;
+    background-size:contain;
+    margin-left: 2.5vw;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -264,6 +267,15 @@ input {
 a {
     text-decoration: none;
 }
+/* responsive_Landing */
+.input-group-text{
+    background-color: white;
+}
+.input-group{
+    width: 50vw;
+    height: 4.5vw;
+    border-radius: 56px;
+
 
 .input-group-text{
     background-color: white;
@@ -361,6 +373,12 @@ class and ui-labels class */
         margin: 0 9px;
         padding: 0;
     }
+    .bg-image {
+        background-image: none;
+    }
+    .figure{
+        width: 100%;
+    }
     .navig {
         display: flex;
         justify-content: space-between;
@@ -380,22 +398,41 @@ class and ui-labels class */
     /* .row {
         display: block;
         text-align: center;
+        margin-top: -35px;
+    }
+
     } */
+
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
-        width: 80%;
+        margin-bottom: 55px;
+        width: 60%;
     }
+
+    .display-3{
+        font-size: 24px;
+        padding-top: -35px;
+    }
+    .lead{
+        font-size: 14px;
+
     .display-3 {
         font-size: 27px;
     }
     .lead {
         font-size: 17px;
+
     }
     .rndn {
         width:90%;
     }
+
+    .footer-image{
+        width: 70%;
+
     .footer-image {
         width: 50%;
+
     }
     .modal-header {
         width: 100%;
@@ -408,10 +445,18 @@ class and ui-labels class */
 @media (min-width: 600px) and (max-width: 991px) {
     .row {
         display: flex;
+        margin-top: -22px;
     } 
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
         width: 30%;
     }
+
+    .footer-image{
+        width: 40%;
+    }
+} 
+
 } 
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
+
