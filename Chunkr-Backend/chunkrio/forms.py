@@ -1,7 +1,8 @@
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from .models import UploadedFile
+from .models import File
+
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
@@ -16,8 +17,7 @@ class ChunkForm(forms.Form):
     file = forms.FileField()
     chunk_size = forms.IntegerField()
 
-
-class UploadFileForm(forms.Form):
-    # title = forms.CharField(max_length=50)
     class Meta:
-        model = UploadedFile
+        model = File
+        fields = ['file', 'number']
+

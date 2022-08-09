@@ -9,7 +9,6 @@
 
 
 
-from . import chunk_csv
 from django.shortcuts import render,redirect
 from .forms import UserRegisterForm
 from django.contrib import messages
@@ -27,9 +26,6 @@ def documentation(request):
 def userProfile(request):
     return render(request, 'profile.html')
 
-# @login_required()
-def chunkForm(request):
-    return render(request, 'chunk-form.html')
 
 
 # User registration views
