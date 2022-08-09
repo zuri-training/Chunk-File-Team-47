@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chunkrio.apps.ChunkrioConfig',
-    'users.apps.UsersConfig'
+    'rest_framework',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ DATABASES = {
        'default': {
            'ENGINE': 'djongo',
            'CLIENT': {
-                'name': 'djongo',
+                'name': 'chunkr_db',
                 'host': 'mongodb+srv://chunkr:admin@cluster0.vnzpp.mongodb.net/?retryWrites=true&w=majority',
                 'username': 'chunkr',
                 'password': 'admin',
@@ -136,3 +137,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+LOGIN_REDIRECT_URL = 'home'
+
+LOGIN_URL = 'login'

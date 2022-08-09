@@ -1,33 +1,199 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Chunkr</title>
-  <style>
-    body{
-      margin: 20%;
-    }
-  </style>
-</head>
-<body>
-  <form>
-    {% csrf_token %}
-    <fieldset class="form-group">
-        <legend class="border-bottom mb-4">Register</legend>
-        {{ form }}
-    </fieldset>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Submit</button>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<main>
+    <!-- First Section  -->
+    <div class="container-fluid text-center">
+      <h1 class="display-3 mt-4">Split your files with <b class="ease">ease</b></h1>
+      <p class="lead mb-0 mt-3">
+        Cut and reduce the size of large JSON and CSV files with customizable
+      </p>
+      <p class="lead mt-n5"> 
+        options to edit how these files would be seperated.
+      </p>
+      {% if user.is_authenticated %}
+      <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
+      {% else %}
+      <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+      {% endif %}
     </div>
-  </form>
-  <div class="border-top pt-3">
-    <small class="text-muted">
-        Already have an account? <a href="#">Log in</a>
-    </small>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
-</html>
+
+    <!-- Logo Section/Second Section -->
+    <div class="row mb-2 pb-5 mt-5 pt-5 mx-0">
+      <img class="img-fluid col-lg-3" src="{% static 'img/ingressive_logo.png' %}" alt="ingressive">
+      <img class="img-fluid col-lg-2" src="{% static 'img/zuri_logo.png' %}" alt="Zuri">
+      <img class="img-fluid col-lg-4 col-md-1 " style="width:25%" src="{% static 'img/reliance_logo.png' %}" alt="reliance">
+    </div>
+    <!-- End of logo section -->
+
+
+    <!-- Third Section -->
+    <div class="">
+      <div class="text-center ">
+        <h1 class="display-3 pb-2 pt-5 mt-5">JSON. CSV. Upload.<b class="ease"> Chunk It</b>.</h1>
+      </div>
+
+      <!-- row -->
+      <div class="row container-fluid pt-5 mt-5 text-center mx-auto mb-5 pb-5 px-5">
+
+        <!-- First Column -->
+        <div class="col-lg-4 col-md-12">
+          <figure class="figure p-4 ">
+            <img src="{% static 'img/chunk-it.svg' %}" class="img" alt="">
+            <figcaption class="figure-caption text-start">
+              <p>
+                Upload and Chunk It
+              </p>
+              <p class="text-1">
+                Create chunks of your uploaded files with ease.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <!-- End of First Column -->
+
+        <!-- Second Column -->
+        <div class="col-lg-4 col-md-12">
+          <figure class="figure p-4">
+            <img src="{% static 'img/json-csv.svg' %}" class="img" alt="">
+            <figcaption class="figure-caption text-start">
+              <p style="font-size:30px">
+                JSON and CSV support
+              </p>
+              <p class="text-1">
+                Splitters supports JSON and CSV formats files .
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Third Column -->
+        <div class="col-lg-4 col-md-12">
+          <figure class="figure p-4 rounded">
+            <img src="{% static 'img/download.svg' %}" class="img-fluid pt-3 mt-4" alt="">
+            <figcaption class="figure-caption text-start">
+              <p>
+                Save and download
+              </p>
+              <p class="text-1">
+                Save your files and download them anytime.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        {% if user.is_authenticated %}
+        <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
+        {% else %}
+        <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+        {% endif %}
+
+      </div>
+      <!-- End of Third Section -->
+
+      <!-- Fourth Section -->
+      <div class="container-fluid mb-5 pb-5 text-center">
+        <p class="display-3 ">
+          Create needed chunk sizes with a <br><b class="ease">few taps.</b>
+        </p>
+        <div class="rndn">
+          <img src="{% static 'img/pc illustration.svg' %}" class="img-fluid mx-auto d-block " alt="" />
+        </div>
+      </div>
+      <!-- End of Fourth Section -->
+
+
+      <!-- Fifth Section -->
+      <div class="text-center">
+        <div class="bg-image">
+          <p class="display-3">
+            “It’s much easier to split my files <b class="ease">now”</b>
+          </p>
+        </div>
+
+        <!-- Testimonial 1 -->
+        <div class="row container-fluid pt-5 mt-3 text-center mx-auto mb-5 pb-5 px-5 w-100">
+          <div class="col-lg-4 col-md-12">
+            <figure class="figure p-4">
+              <img src="{% static 'img/dark-quote.svg' %}" class="img me-1 mb-4 mt-3" alt="">
+              <figcaption class="figure-caption text-start">
+                <p class="pb-4 text-2">
+                  Awesome. Love the tools on offer and how easy it is to use them, especially the splitting options.
+                </p>
+                <img src="{% static 'img/user1.png' %}" class="rounded w-25 mx-auto d-block pb-4" alt="" />
+                <p class="text-center">Jane Cooper</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-lg-4 col-md-12">
+            <figure class="figure p-4">
+              <img src="{% static 'img/dark-quote.svg' %}" class="img me-1 mb-4 mt-3" alt="">
+              <figcaption class="figure-caption text-start">
+                <p class="pb-4 text-2">
+                  I was concerned about the need to sig up but on realizing the benefits, it was a no brainer. Kudos
+                  guys!
+                </p>
+                <img src="{% static 'img/user2.png' %}" class="rounded w-25 mx-auto d-block pb-4" alt="" />
+                <p class="text-center">Ralph Edwards</p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-lg-4 col-md-12">
+            <figure class="figure p-4">
+              <img src="{% static 'img/dark-quote.svg' %}" class="img me-1 mb-4 mt-3" alt="">
+              <figcaption class="figure-caption text-start">
+                <p class="pb-4 text-2">
+                  This is the perfect all in one solution for anyone looking to work with large files. Splitting was a
+                  breeze.
+                </p>
+                <img src="{% static 'img/user3.png' %}" class="rounded w-25 mx-auto d-block pb-4" alt="" />
+                <p class="text-center">Theresa Webb</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <!-- End of Fifth Section -->
+
+
+      <!-- Sixth Section -->
+
+      <div class="container-fluid text-center ">
+        <div class="text-center">
+          {% if user.is_authenticated %}
+          <p class="display-3">
+            Welcome <b class="ease">{{user.username}}</b>
+          </p>
+          <p class="pt-2 mb-n2 mb-0" style="font-size:20px;">
+            Never lose your files again while keeping track of your shared files.
+          </p>
+          <div class="mb-5 pb-4">
+            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'userprofile' %}">Visit Dashboard</a></button>
+            {% else %}
+            <p class="display-3">
+              Sign up to get <b class="ease">started</b>
+            </p>
+            <p class="pt-2 mb-n2 mb-0" style="font-size:20px;">
+              Never lose your files again while keeping track of your shared files.
+            </p>
+            <p class="pt-0 mb-0" style="font-size:20px ;">
+              Join thousands of industry professionals using the
+            <p style="font-size:20px ;">gold standard in splitting technology.</p>
+            </p>
+            <div class="mb-5 pb-4">
+              <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- End of Sixth Section -->
+
+
+
+{% endblock content %}

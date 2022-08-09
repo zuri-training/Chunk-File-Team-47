@@ -1,1 +1,3 @@
 Backend devs push your code here!
+
+{% csrf_token %}
