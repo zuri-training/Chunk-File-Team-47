@@ -6,7 +6,7 @@ Presentation Documentation <br>
 Co-contributor<br>
 Link - https://github.com/zuri-training/Chunk-File-Team-47/issues/13#issue-1322416736
 
- Research (User Flows & Personas)<br>
+ Research (User Flows & Persona)<br>
 Co-contributor<br>
 Link - https://github.com/zuri-training/Chunk-File-Team-47/issues/14#issuecomment-1199909974
 
