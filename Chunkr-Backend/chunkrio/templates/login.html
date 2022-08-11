@@ -39,12 +39,9 @@
                               {{ form|crispy }}
                           </fieldset>
                           <br>
-                          <div class="form-group" id="signup-button">
-                              <button class="btn btn-dark">Sign In</button>
-                          </div>
                           <br>
                           <div class="form-group">
-                          <p class="ease text-start pb-3 mt-2"><b><a href="resetpassword.html">
+                          <p class="ease text-start pb-3 mt-2"><b><a href="{% url 'password_reset' %}">
                             Forgotten password?</a></b>
                           </p>
                           </div>
