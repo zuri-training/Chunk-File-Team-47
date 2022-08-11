@@ -86,12 +86,16 @@ body,main {
     font-size: 40px;
 }
 
+.signup-page {
+    margin-top: -12px;
+}
+
 .chunk-create {
-    margin-left: 104px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    color: #959693;
 }
 
 .enter {
@@ -102,6 +106,7 @@ body,main {
     font-weight: 700;
     font-size: 16px;
     word-spacing: 1px;
+    color: #959693;
 }
 
 .enter2 {
@@ -150,7 +155,7 @@ body,main {
 .figure-caption>p {
     color:#4F504C;
     font-size: 32px;
-    font-family: manrope,sans-serif;
+    font-family: 'Manrope',sans-serif;
     font-weight: 700;
     text-align: center;
 }
@@ -169,7 +174,6 @@ p.text-1 {
 
 .row.container-fluid.pt-5.mt-5.text-center.mx-auto {
     background-image: url(img/bubble-background.png);
-
 }
 
 .pb-4.text-2,p.text-center {
@@ -178,14 +182,14 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size:contain;
+    background-size: contain;
     margin-left: 2.5vw;
     background-position: left;
     background-repeat: no-repeat;
 }
 
 footer { 
-    background-color:  #24272C;
+    background-color:#24272C;
     color: white;
     font-size: 24px;
     width: 100%;
@@ -196,7 +200,7 @@ footer {
 .text-3 {
     font-size: 16px;
     font-weight: 100;
-    font-family: manrope,sans-serif;
+    font-family: 'Manrope',sans-serif;
 }
 
 /* #exampleModalLabel {
@@ -217,7 +221,7 @@ hr {
 } */
 
 input {
-    font-family: manrope,sans-serif;
+    font-family: 'Manrope',sans-serif;
     font-size: 12px;  
 }
 
@@ -242,10 +246,17 @@ input {
 }
 
 .sign-up-form {
-    border: 1px solid #0F0F0D;
-    border-radius: 10px;
+    box-shadow: 0px 4px 32px -2px rgb(46, 45, 45, 0.15);
+    border-radius: 16px;
 }
 
+.form-control {
+    background: #F7F7F7;
+}
+
+.p-reset {
+    margin-bottom: 70px;
+}
 /* .close {
     position: absolute;
     left: 454px;
@@ -271,17 +282,18 @@ a {
 .input-group-text{
     background-color: white;
 }
-.input-group{
+
+.input-group {
     width: 50vw;
     height: 4.5vw;
     border-radius: 56px;
-
+}
 
 .input-group-text{
     background-color: white;
 }
 
-.input-group{
+.input-group {
     width: 40vw;
     height: 4.5vw;
     border-radius: 56px;
@@ -290,35 +302,36 @@ a {
 li {
     list-style-type: none;
 }
+
 /* faq */
-.col-2.rounded>p {
+.col-2.rounded {
     margin-bottom: -1.7px;
 }
 
 /* main */
 
-.files{
+.files {
     font-size: 12px;
 }
-.progress{
+
+.progress {
     height: 6%;
 }
 
-    .dropdown-menu[data-bs-popper] {
-        top: 100%;
-        right: 0;
-        left: 64%;
-        margin-top: var(--bs-dropdown-spacer);
-        width: 250px;
-    }
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0;
+    left: 64%;
+    margin-top: var(--bs-dropdown-spacer);
+    width: 250px;
+}
 /* Create a container using css properties */
-.container {
-
+/* .container {
 	left:10%;
 	position: absolute;
 	text-align: center;
 	transform: translate(-50%, -50%);
-}
+} */
 
 li.h4.text-dark.py-3.fw-normal:hover{
     background-color: #F7F7F7;
@@ -338,8 +351,6 @@ li.h4.text-dark.py-3.fw-normal:hover{
 	text-align: center;
 	box-sizing: border-box;
 }
-
-
 
 /* Apply css properties to ui-widgets
 class and ui-values class */
@@ -363,11 +374,25 @@ class and ui-labels class */
 	width: 100%;
 	font-size: 16px;
 }
+
 .progress-labels{
     margin-bottom: -3.5px;
 }
 
 /* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
+@media (min-width: 600px) and (max-width: 991px) {
+    .row {
+        display: flex;
+    } 
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 30%;
+    }
+    .footer-image {
+        width: 40%;
+    }
+} 
+
 @media (min-width: 300px) and (max-width: 599px){
     .navi {
         margin: 0 9px;
@@ -376,7 +401,7 @@ class and ui-labels class */
     .bg-image {
         background-image: none;
     }
-    .figure{
+    .figure {
         width: 100%;
     }
     .navig {
@@ -408,55 +433,53 @@ class and ui-labels class */
         margin-bottom: 55px;
         width: 60%;
     }
-
-    .display-3{
+    .display-3 {
         font-size: 24px;
         padding-top: -35px;
     }
-    .lead{
+    .lead {
         font-size: 14px;
-
+    }
     .display-3 {
         font-size: 27px;
     }
     .lead {
         font-size: 17px;
-
     }
     .rndn {
         width:90%;
     }
-
     .footer-image{
         width: 70%;
-
+    }
     .footer-image {
         width: 50%;
-
     }
-    .modal-header {
+    /* .modal-header {
         width: 100%;
+    } */
+} 
+
+@media (min-width: 320px) and (max-width: 425px){
+    .text-start.sign-up, .dont-have {
+        font-size: 13px;
     }
-    .ui-widgets{
+    .chunk-create {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .display-6 {
+        font-size: 26px;
+    }
+    .enter {
+        font-size: 13px;
+    }
+    .forgot-p {
+        font-size: 20px;
+    }
+}
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
+
+    .ui-widgets {
         border:none
     }
-
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .row {
-        display: flex;
-        margin-top: -22px;
-    } 
-    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
-        height: auto;
-        width: 30%;
-    }
-
-    .footer-image{
-        width: 40%;
-    }
-} 
-
-} 
-/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/}
-
