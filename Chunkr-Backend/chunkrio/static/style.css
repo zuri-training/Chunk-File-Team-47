@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
-/* #b9b9b7
-    #959693
-    #252621, #2C2D28, #4F504C, 727370, 959693, B9B9B7, FFFFFF, F7F7F7, AAAAAA, 808080, 9CC2FF, 7CAEFF, 5B9AFF, 3A86FF, 3070D4, 2759AA, 93D6AF, 6FC995, 4BBB7B, 27AE60, 219150, 1A7440, F28F8F, EE7373, EB5757, C44949, 762C2C, 4E1D1D, F0DC9D, ECD07C, E7C55C, E2B93B, BC9A31, 977B27
- */
-* {
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
+    /* border: 1px solid red; */
 }
-htnl {
+
+html {
     height: 100%
 }
 
@@ -19,6 +18,7 @@ body,main {
     min-height: 100vh;
  }
 
+/* STYLING FOR LANDING PAGE STARTS HERE */
  nav {
     background-color: #fff;
     animation: fadeIn; 
@@ -83,12 +83,16 @@ body,main {
     font-size: 40px;
 }
 
+.signup-page {
+    margin-top: -12px;
+}
+
 .chunk-create {
-    margin-left: 104px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
+    color: #959693
 }
 
 .enter {
@@ -97,8 +101,9 @@ body,main {
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     word-spacing: 1px;
+    color: #959693
 }
 
 .enter2 {
@@ -129,7 +134,7 @@ body,main {
 
 .sign-in2 {
     margin-top: -10px;
-    margin-bottom: 35px;
+    margin-bottom: 18px;
 }
 
 .signin-b {
@@ -175,7 +180,9 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size: cover;
+    background-size:contain;
+    margin-left: 2.5vw;
+    background-position: left;
     background-repeat: no-repeat;
 }
 
@@ -194,40 +201,39 @@ footer {
     font-family: manrope,sans-serif;
 }
 
-#exampleModalLabel {
+/* #exampleModalLabel {
     font-family: inter,sans-serif;
-}
+} */
 
 hr {
     border-width: 4px;
     color:#FFFFFF;
 }
 
-span {
-    justify-content: space-around;
-    padding-right: 2vw;
-}
-
 .footer-image {
     width: 20%;
 }
 
-.modal-content {
+/* .modal-content {
     width: 100%;
-}
+} */
 
 input {
     font-family: manrope,sans-serif;
     font-size: 12px;  
 }
 
-.modal-dialog { 
+/* .modal-dialog { 
     font-family: manrope,sans-serif;
-}
+} */
 
-.modal-header{
+/* .modal-header {
     border-bottom: none;
     margin-bottom: -3vw;
+} */
+
+.username-mod1 {
+    margin-top: -5px;
 }
 
 .text-start{
@@ -237,7 +243,19 @@ input {
     font-size: 16px;
 }
 
-.close {
+.sign-up-form {
+    box-shadow: 0px 4px 32px -2px rgba(46, 45, 45, 0.15);
+    border-radius: 16px;
+}
+
+.form-control{
+    background: #F7F7F7;
+}
+
+.p-reset {
+    margin-bottom: 70px;
+}
+/* .close {
     position: absolute;
     left: 454px;
     top: 25px;
@@ -246,29 +264,145 @@ input {
 .close1 {
     position: absolute;
     left: 457px;
-    top: 50px;
+    top: 30px;
 } 
 
 .btn-close { 
     border: 2px solid #292D32;
     width: 20px;
     height: 20px;
-}
+} */
 
 a {
     text-decoration: none;
 }
-
-.form-control{
-    background-color: #F7F7F7;
-    color: rgba(69, 63, 63, 0.701);
-    border :1px solid rgba(69, 63, 63, 0.701);
+/* responsive_Landing */
+.input-group-text{
+    background-color: white;
 }
+.input-group{
+    width: 50vw;
+    height: 4.5vw;
+    border-radius: 56px;
+}
+
+.input-group-text {
+    background-color: white;
+}
+
+.input-group {
+    width: 40vw;
+    height: 4.5vw;
+    border-radius: 56px;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* faq */
+.col-2.rounded {
+    margin-bottom: -1.7px;
+}
+
+/* main */
+
+.files {
+    font-size: 12px;
+}
+
+.progress {
+    height: 6%;
+}
+
+.dropdown-menu[data-bs-popper] {
+        top: 100%;
+        right: 0;
+        left: 64%;
+        margin-top: var(--bs-dropdown-spacer);
+        width: 250px;
+    }
+    
+/* Create a container using css properties */
+/* .container {
+	left:10%;
+	position: absolute;
+	text-align: center;
+	transform: translate(-50%, -50%);
+} */
+
+li.h4.text-dark.py-3.fw-normal:hover{
+    background-color: #F7F7F7;
+    border-left: 4px solid black;
+}
+
+/* Apply css properties to ui-widgets class */
+.ui-widgets {
+	position: relative;
+	display: inline-block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 9rem;
+	margin:1.5rem;
+	border: 1.2rem solid black;
+	border-left-color: #3a86ff;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-values class */
+.ui-widgets .ui-values {
+	top: 40px;
+	position: absolute;
+	left: 2px;
+	right: 0;
+	font-weight: 700;
+	font-size: 2.0rem;
+}
+
+/* Apply css properties to ui-widgets
+class and ui-labels class */
+.ui-widgets .ui-labels {
+	left: 0;
+	bottom: -16px;
+	text-shadow: 0 0 4px grey;
+	color:black;
+	position: absolute;
+	width: 100%;
+	font-size: 16px;
+}
+
+.progress-labels{
+    margin-bottom: -3.5px;
+}
+
+/* MEDIA QUERIES FOR LANDING PAGE STARTS HEERE*/
+@media (min-width: 600px) and (max-width: 991px) {
+    .row {
+        display: flex;
+    } 
+    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+        height: auto;
+        width: 30%;
+    }  .display-6 {
+        font-size: 30px;
+    }
+    .enter {
+        font-size: 13px;
+    }
+} 
 
 @media (min-width: 300px) and (max-width: 599px){
     .navi {
         margin: 0 9px;
         padding: 0;
+    }
+    .bg-image {
+        background-image: none;
+    }
+    .figure{
+        width: 100%;
     }
     .navig {
         display: flex;
@@ -285,37 +419,86 @@ a {
     .register-btns {
         display: none;
     }
-    .row {
+}
+    
+    /* .row {
         display: block;
         text-align: center;
+        margin-top: -35px;
     }
+
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
-        width: 80%;
+        margin-bottom: 55px;
+        width: 60%;
     }
+
     .display-3{
-        font-size: 27px;
+        font-size: 24px;
+        padding-top: -35px;
     }
     .lead{
-        font-size: 17px;
+        font-size: 14px;
+
+    .display-3 {
+        font-size: 27px;
     }
-    .rndn{
+    .lead {
+        font-size: 17px;
+
+    }
+    .rndn {
         width:90%;
     }
+
     .footer-image{
+        width: 70%;
+
+    .footer-image {
         width: 50%;
+
     }
-    .modal-header{
+    .modal-header {
         width: 100%;
     }
+    
+ /* signup */
+@media (min-width: 320px) and (max-width: 425px) {
+    .text-start.sign-up, .dont-have {
+        font-size: 13px;
+    }
+    .chunk-create {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+    .display-6 {
+        font-size: 26px;
+    }
+    .enter {
+        font-size: 13px;
+    }
+    .forgot-p {
+        font-size: 20px;
+    }
 }
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
+
+    .ui-widgets{
+        border:none
+    }
 
 @media (min-width: 600px) and (max-width: 991px) {
     .row {
         display: flex;
+        margin-top: -22px;
     } 
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
         width: 30%;
     }
+    .footer-image{
+        width: 40%;
+    }
 } 
+/* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
+

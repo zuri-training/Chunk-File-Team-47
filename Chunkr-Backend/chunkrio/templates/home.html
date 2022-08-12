@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
 
 <link rel="stylesheet" href="{% static 'style.css' %}">
-<main>
+  <main>
     <!-- First Section  -->
     <div class="container-fluid text-center">
       <h1 class="display-3 mt-4">Split your files with <b class="ease">ease</b></h1>
@@ -16,17 +17,19 @@
       {% if user.is_authenticated %}
       <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
       {% else %}
-      <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+      <button type="button" class="btn btn-dark mx-auto get-started mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
       {% endif %}
     </div>
+    <!-- End of first section -->
 
     <!-- Logo Section/Second Section -->
-    <div class="row mb-2 pb-5 mt-5 pt-5 mx-0">
-      <img class="img-fluid col-lg-3" src="{% static 'img/ingressive_logo.png' %}" alt="ingressive">
-      <img class="img-fluid col-lg-2" src="{% static 'img/zuri_logo.png' %}" alt="Zuri">
-      <img class="img-fluid col-lg-4 col-md-1 " style="width:25%" src="{% static 'img/reliance_logo.png' %}" alt="reliance">
+    <div class="row mb-2 pb-5 mt-5 pt-5 mx-0" style="width: 80%; padding-left: 20%;" >
+      <img class="img-fluid col-lg-3" src="{% static 'img/ingressive_logo.png' %}"alt="ingressive">
+      <img class="img-fluid col-lg-2" src="{% static 'img/zuri_logo.png' %}"alt="Zuri">
+      <img class="img-fluid col-lg-4" src="{% static 'img/reliance_logo.png' %}"   alt="reliance">
     </div>
     <!-- End of logo section -->
+
 
 
     <!-- Third Section -->
@@ -41,7 +44,7 @@
         <!-- First Column -->
         <div class="col-lg-4 col-md-12">
           <figure class="figure p-4 ">
-            <img src="{% static 'img/chunk-it.svg' %}" class="img" alt="">
+            <img src="{% static 'img/chunk-it.svg' %}" class="img" alt="" >
             <figcaption class="figure-caption text-start">
               <p>
                 Upload and Chunk It
@@ -86,19 +89,20 @@
         {% if user.is_authenticated %}
         <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'documentation' %}">Read More</a></button>
         {% else %}
-        <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+        <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
         {% endif %}
-
       </div>
       <!-- End of Third Section -->
 
       <!-- Fourth Section -->
       <div class="container-fluid mb-5 pb-5 text-center">
-        <p class="display-3 ">
-          Create needed chunk sizes with a <br><b class="ease">few taps.</b>
+        <p class="display-3" style="font-size: 3rem;">
+          Create needed chunk sizes with a <b class="ease">few taps.</b>
         </p>
+        <br>
+        <br>
         <div class="rndn">
-          <img src="{% static 'img/pc illustration.svg' %}" class="img-fluid mx-auto d-block " alt="" />
+          <img src="{% static 'img/pc illustration.svg' %}" class="img-fluid mx-auto d-block " alt="" width="60%" />
         </div>
       </div>
       <!-- End of Fourth Section -->
@@ -162,7 +166,6 @@
 
 
       <!-- Sixth Section -->
-
       <div class="container-fluid text-center ">
         <div class="text-center">
           {% if user.is_authenticated %}
@@ -175,18 +178,18 @@
           <div class="mb-5 pb-4">
             <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'userprofile' %}">Visit Dashboard</a></button>
             {% else %}
-            <p class="display-3">
-              Sign up to get <b class="ease">started</b>
-            </p>
-            <p class="pt-2 mb-n2 mb-0" style="font-size:20px;">
-              Never lose your files again while keeping track of your shared files.
-            </p>
-            <p class="pt-0 mb-0" style="font-size:20px ;">
-              Join thousands of industry professionals using the
-            <p style="font-size:20px ;">gold standard in splitting technology.</p>
-            </p>
-            <div class="mb-5 pb-4">
-              <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+          <p class="display-3">
+            Sign up to get <b class="ease">started</b>
+          </p>
+          <p class="pt-2 mb-n2 mb-0" style="font-size:20px ;">
+            Never lose your files again while keeping track of your shared files.
+          </p>
+          <p class="pt-0 mb-0" style="font-size:20px ;">
+            Join thousands of industry professionals using the
+          <p style="font-size:20px ;">gold standard in splitting technology.</p>
+          </p>
+          <div class="mb-5 pb-4">
+            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Read More</a></button>
               {% endif %}
           </div>
         </div>
@@ -194,6 +197,4 @@
   </main>
   <!-- End of Sixth Section -->
 
-
-
-{% endblock content %}
+  {% endblock content %}

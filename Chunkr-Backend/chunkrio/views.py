@@ -1,15 +1,16 @@
-from pickle import FALSE
 from django.shortcuts import render,redirect
-from django.http import HttpResponse
-from django.contrib.auth.forms import UserCreationForm
 from .forms import UserRegisterForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from zipfile import  ZipFile
-import pandas as pd
-import os
-from .models import File
-from django.db.models import Q
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
+from django.contrib.auth.forms import PasswordResetForm
+from django.contrib.auth.models import User
+from django.template.loader import render_to_string
+from django.db.models.query_utils import Q
+from django.utils.http import urlsafe_base64_encode
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.encoding import force_bytes
 
 
 # Create your views here.
@@ -40,39 +41,37 @@ def register(request):
     return render(request, 'register.html', {'form': form})
 
 
-# Split Program
-def chunk_program(request):
-    if request.method == "POST":
-        file = request.FILES.get('file')
-        ouput_name = request.POST['file_name']
-        chunk_size = request.POST['chunk_size']
-        user = request.user
-        if chunk_size == '' or file == None:
-            messages.error(request, 'fields cannot be blank!')
-            return redirect('/')
-        
-        if  file.name.endswith('csv'):
-            if output_name == '':
-                output_name = file.name
-    
-            chunk_size = int(chunk_size)
-            batch_no = 1
-            for chunk in pd.read_csv(file, chunksize=chunk_size):
-                with ZipFile(f'media/{user}{output_name}-.zip', 'a') as zip_file:
-                    file_name = f"{output_name}-" + str(batch_no) + ".csv"
-                    zip_file.write(file_name,chunk.to_csv(file_name, index=False))
-                os.remove(file_name)
-                batch_no += 1
-                
-                
-            csv_obj = File.objects.create(user=user, file=f'{user}{ouput_name}-.zip')
-            csv_obj.save()
-            
-            messages.info(request, 'Split completed!')
-            return redirect('/new_chunk')
-        
-        messages.error(request, 'invalid file format')
-        return redirect('/split_form')
-    
-    return render(request, 'split_form.html')
 
+# Reset password
+def password_reset_request(request):
+	if request.method == "POST":
+		password_reset_form = PasswordResetForm(request.POST)
+		if password_reset_form.is_valid():
+			data = password_reset_form.cleaned_data['email']
+			associated_users = User.objects.filter(Q(email=data))
+			if associated_users.exists():
+				for user in associated_users:
+					subject = "Password Reset Requested"
+					email_template_name = "password_reset_email.txt"
+					c = {
+					"email": [user.email],
+					'domain':'127.0.0.1:8000',
+					'site_name': 'Website',
+					"uid": urlsafe_base64_encode(force_bytes(user.pk)),
+					'token': default_token_generator.make_token(user),
+					'protocol': 'http',
+					}
+					email = render_to_string(email_template_name, c)
+					try:
+						send_mail(subject, email, 'alukoayomide623@gmail.com' , ['alukoayomide623@gmail.com'], fail_silently=False)
+					except BadHeaderError:
+
+						return HttpResponse('Invalid header found.')
+						
+					messages.success(request, 'A message with reset password instructions has been sent to your inbox.')
+					return redirect ("login")
+			messages.error(request, 'An invalid email has been entered.')
+	password_reset_form = PasswordResetForm()
+	return render(request=request, template_name="password_reset.html", context={"password_reset_form":password_reset_form})
+
+# Split Program

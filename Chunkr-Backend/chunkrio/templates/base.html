@@ -46,8 +46,8 @@
         <button type="button" class="btn btn-outline" ><a style="color: black;" href="{% url 'logout' %}">Log out</a></button>
         {% else %}
         <button type="button" class="btn btn-dark me-4" ><a style="color: white;" href="{% url 'register' %}">Sign Up</a></button>
-        <button type="button" class="btn btn-outline"><a style="color: black;" href="{% url 'login' %}">Sign In</a></button>
-        {% endif %}
+        <button type="button" class="btn btn-outline-dark"><a style="color: black;" href="{% url 'login' %}">Sign In</a></button>
+      {% endif %}
       </div>
     </div>
   </nav>
@@ -55,7 +55,7 @@
   <div class="container">
     {% if messages %}
     {% for message in messages %}
-      <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">{{message}}
+      <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">Welcome {{user.username}}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
       </div>
     {% endfor %}
@@ -88,16 +88,16 @@
         <!-- Sub-heading -->
         <div class="text-3 text-center">
           <span>
-            GitHub
+           <a href="https://github.com/zuri-training/Chunk-File-Team-47.git">GitHub</a> 
           </span>
           <span>
-            Documentation
+            <a href="{% url 'documentation' %}">Documentation</a>
           </span>
           <span>
-            FAQs
+            <a href="{% url 'documentation' %}">FAQs</a>
           </span>
           <span>
-            More Tools
+           <a href="#"> More Tools </a>
           </span>
         </div>
       </div><br>

@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% load static %}
-
 {% block content %}
+
 <link rel="stylesheet" href="{% static 'style.css' %}">
-<main>
+  <main>
     <!-- First Section  -->
     <div class="container-fluid text-center">
       <h1 class="display-3 mt-4">Split your files with <b class="ease">ease</b></h1>
@@ -13,16 +14,18 @@
       <p class="lead mt-n5"> 
         options to edit how these files would be seperated.
       </p>
-      <button type="button" class="btn btn-dark mx-auto get-started mb-5" > <a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+      <button type="button" class="btn btn-dark mx-auto get-started mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
     </div>
+    <!-- End of first section -->
 
     <!-- Logo Section/Second Section -->
     <div class="row mb-2 pb-5 mt-5 pt-5 mx-0">
       <img class="img-fluid col-lg-3" src="{% static 'img/ingressive_logo.png' %}" alt="ingressive">
       <img class="img-fluid col-lg-2" src="{% static 'img/zuri_logo.png' %}" alt="Zuri">
-      <img class="img-fluid col-lg-4 col-md-1 " style="width:25%" src="{% static 'img/reliance_logo.png' %}" alt="reliance">
+      <img class="img-fluid col-lg-4" src="{% static 'img/reliance_logo.png' %}" alt="reliance">
     </div>
     <!-- End of logo section -->
+
 
 
     <!-- Third Section -->
@@ -79,8 +82,7 @@
             </figcaption>
           </figure>
         </div>
-        <button type="button" class="btn btn-dark get-started mx-auto mb-5"><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
-
+        <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
       </div>
       <!-- End of Third Section -->
 
@@ -154,7 +156,6 @@
 
 
       <!-- Sixth Section -->
-
       <div class="container-fluid text-center ">
         <div class="text-center">
           <p class="display-3">
@@ -168,12 +169,11 @@
           <p style="font-size:20px ;">gold standard in splitting technology.</p>
           </p>
           <div class="mb-5 pb-4">
-            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Get Started</a></button>
+            <button type="button" class="btn btn-dark get-started mx-auto mb-5" ><a style="color: white;" href="{% url 'register' %}">Read More</a></button>
           </div>
         </div>
       </div>
   </main>
   <!-- End of Sixth Section -->
 
-
-{% endblock %}
+  {% endblock content %}
