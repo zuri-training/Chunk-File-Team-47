@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&;700&;display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: 'Manrope'; 
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  padding-left: 96px;
+  padding-right: 24px;
+  background-color: #FFFFFF;
+}
+
+/* INTRODUCTION PAGE */
+/* header menu */
+.navbar {
+  margin-left: 20%;
+  border-bottom: 1px solid #161714;
+  padding-left: 36px;
+}
+
+.navbar-brand {
+  margin: 0px 26px -6px 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-brand img {
+  width: 25%;
+}
+
+/* sidebar */
+.side-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  border-right: 1px solid black;
+  width: 20%;
+  z-index: 100;
+}
+
+.sidebar-link {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20%;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:active {
+  background-color:rgb(208, 223, 233); 
+  border-left:2px solid black;
+  padding:10px;
+}
+
+.brand {
+  margin-bottom: 50px ;
+  margin-top: 20px;
+}
+
+/* .section-head {
+  font-weight: 500;
+  font-size: 24px;
+  color: #252621;
+} */
+
+.point {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1D1E1B;
+}
+
+
+
+/* body */
+.section {
+  padding-left: 17%;
+}
+
+.btn-n {
+  background-color: #000;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+li {
+  line-height: 40px;
+}
+
+.footer {
+  padding-left: 35%;
+  padding-right: 25%;
+}
+/* INTRODUCTION PAGE ENDS HERE */
+
+/* this is needed to make the content scrollable on larger screens */
+@media (min-width: 576px) {
+  .h-sm-100 {
+      height: 100%;
+  }
+}
+

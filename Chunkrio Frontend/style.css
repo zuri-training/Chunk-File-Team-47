@@ -152,7 +152,7 @@ body,main {
 .figure-caption>p {
     color:#4F504C;
     font-size: 32px;
-    font-family: manrope,sans-serif;
+    font-family: 'Manrope',sans-serif;
     font-weight: 700;
     text-align: center;
 }
@@ -171,7 +171,6 @@ p.text-1 {
 
 .row.container-fluid.pt-5.mt-5.text-center.mx-auto {
     background-image: url(img/bubble-background.png);
-
 }
 
 .pb-4.text-2,p.text-center {
@@ -180,14 +179,14 @@ p.text-1 {
 
 .bg-image {
     background-image: url(img/blue_quote.svg);
-    background-size:contain;
+    background-size: contain;
     margin-left: 2.5vw;
     background-position: left;
     background-repeat: no-repeat;
 }
 
 footer { 
-    background-color:  #24272C;
+    background-color:#24272C;
     color: white;
     font-size: 24px;
     width: 100%;
@@ -198,30 +197,16 @@ footer {
 .text-3 {
     font-size: 16px;
     font-weight: 100;
-    font-family: manrope,sans-serif;
+    font-family: 'Manrope',sans-serif;
 }
 
 /* #exampleModalLabel {
     font-family: inter,sans-serif;
 } */
 
-hr {
-    border-width: 4px;
-    color:#FFFFFF;
-}
-
-.footer-image {
-    width: 20%;
-}
-
 /* .modal-content {
     width: 100%;
 } */
-
-input {
-    font-family: manrope,sans-serif;
-    font-size: 12px;  
-}
 
 /* .modal-dialog { 
     font-family: manrope,sans-serif;
@@ -273,6 +258,51 @@ input {
     height: 20px;
 } */
 
+
+hr {
+    border-width: 4px;
+    color:#FFFFFF;
+}
+
+.footer-image {
+    width: 20%;
+}
+
+.footer-link, .footer-link:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+input {
+    font-family: 'Manrope',sans-serif;
+    font-size: 12px;  
+}
+
+.username-mod1 {
+    margin-top: -5px;
+}
+
+.text-start{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sign-up-form {
+    box-shadow: 0px 4px 32px -2px rgb(46, 45, 45, 0.15);
+    border-radius: 16px;
+}
+
+.form-control {
+    background: #F7F7F7;
+}
+
+.p-reset {
+    margin-bottom: 70px;
+}
+
 a {
     text-decoration: none;
 }
@@ -280,7 +310,8 @@ a {
 .input-group-text{
     background-color: white;
 }
-.input-group{
+
+.input-group {
     width: 50vw;
     height: 4.5vw;
     border-radius: 56px;
@@ -401,7 +432,7 @@ class and ui-labels class */
     .bg-image {
         background-image: none;
     }
-    .figure{
+    .figure {
         width: 100%;
     }
     .navig {
@@ -432,35 +463,45 @@ class and ui-labels class */
         margin-bottom: 55px;
         width: 60%;
     }
-
-    .display-3{
+    .display-3 {
         font-size: 24px;
         padding-top: -35px;
     }
-    .lead{
+    .lead {
         font-size: 14px;
-
+    }
     .display-3 {
         font-size: 27px;
     }
     .lead {
         font-size: 17px;
-
     }
     .rndn {
         width:90%;
     }
-
     .footer-image{
         width: 70%;
-
+    }
     .footer-image {
         width: 50%;
-
     }
-    .modal-header {
+    /* .modal-header {
         width: 100%;
-    }
+    } */
+
+    @media (min-width: 600px) and (max-width: 991px) {
+        .row {
+            display: flex;
+            margin-top: -22px;
+        } 
+        .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+            height: auto;
+            width: 30%;
+        }
+        .footer-image{
+            width: 40%;
+        }
+} 
     
  /* signup */
 @media (min-width: 320px) and (max-width: 425px) {
@@ -486,19 +527,4 @@ class and ui-labels class */
     .ui-widgets{
         border:none
     }
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .row {
-        display: flex;
-        margin-top: -22px;
-    } 
-    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
-        height: auto;
-        width: 30%;
-    }
-    .footer-image{
-        width: 40%;
-    }
-} 
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
-
