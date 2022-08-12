@@ -14,15 +14,17 @@
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-6">
     <div class="navbar-brand">
-      <img src="/Chunkrio Frontend/img/Documentation Pages/CHUNKr.iO Guide.svg">
-      <img src="/Chunkrio Frontend/img/Documentation Pages/Documentation Illustration.svg">
+      <div class="container nav-brand">
+        <img class="mt-md-5 chunkr-guide" src="/Chunkrio Frontend/img/Documentation Pages/CHUNKr.iO Guide.svg">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Documentation Illustration.svg">
+      </div>
     </div>
   </nav>
 
   <div class="side-bar">
     <div class="sidebar-link brand">
         <a href="/Chunkrio Frontend/home.html">
-        <img src="/Chunkrio Frontend/img/Documentation Pages/Chunkr.iO back button.svg" class="img-fluid" style="width:60% ;" alt="">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Chunkr.iO back button.svg" class="img-fluid" style="width: 100% ;" alt="">
       </a> 
     </div>
     <div class="sidebar-link">
@@ -42,33 +44,34 @@
     </div>
 
   </div>
-  <section class="row overflow-auto section mt-5 pt-5 mx-0">
+
+  <section class="row overflow-auto section mt-lg-5 pt-5 mx-0">
     <div class="container">
-      <div class="col pt-4">
-        <h3 class="my-3 point">Introduction</h3>
-        <p>Chunkr.iO is a splitter tool service that provides users with the ability to selectively divide CSV and
+      <div class="col pt-lg-4 pt-md-0 section-info">
+        <h3 class="mb-3 point">Introduction</h3>
+        <p class="mb-5 sub-point">Chunkr.iO is a splitter tool service that provides users with the ability to selectively divide CSV and
           JSON files using chunk size as a parameter for division. With extensive research and idea implementation, Team
           47 aims
           to deliver an optimised method of splitting, ensuring that shortcomings like inaccuracy, system errors and
           data
           incompletion are non-existent.</p>
 
-        <h3>What is a CSV file</h3>
-        <p>A CSV (Comma-Separated Value) file, as the name implies, typically separates information using commas. It's a
+        <h3 class="mb-3 point">What is a CSV file <img class="ms-2" src="/Chunkrio Frontend/img/Documentation Pages/Circular Question Mark DOC.svg"></h3>
+        <p class="mb-5 sub-point">A CSV (Comma-Separated Value) file, as the name implies, typically separates information using commas. It's a
           way to
           exchange structured information, like the contents of a spreadsheet, among programs that can't necessarily
           talk to one
           another directly.</p>
 
-        <h3>What is a JSON file</h3>
-        <p>A JSON (JavaScript Object Notation) file is an open standard file format and data interchange format that
+        <h3 class="mb-3 point">What is a JSON file <img class="ms-2" src="/Chunkrio Frontend/img/Documentation Pages/Circular Question Mark DOC.svg"></h3>
+        <p class="mb-5 sub-point">A JSON (JavaScript Object Notation) file is an open standard file format and data interchange format that
           uses
           human-readable text to store and transmit data objects consisting of attribute-value pairs and arrays (or
           other
           serializable values).</p>
 
-        <h3>Where Chunkr.iO steps in...</h3>
-        <p>These files exist in large formats in terms of size and properties, so we proposed & created the flexibility
+        <h3 class="mb-3 point">Where Chunkr.iO steps in...</h3>
+        <p class="mb-5 sub-point">These files exist in large formats in terms of size and properties, so we proposed & created the flexibility
           of
           splitting into smaller sections to enable users of CSV and JSON file work smarter and better, digest the
           informations
@@ -76,20 +79,16 @@
         </p>
       </div>
 
-
-      <footer class="footer d-flex bg-dark text-light py-4 mt-auto">
-        <a class="me-2 footer-link" href="https://github.com/zuri-training/Chunk-File-Team-47/tree/main"><span>GitHub</span></a>
-        <p class="me-5">CHUNKr.iO</p>
-        <a class="footer-link" href="./getting-started.html"><span class="me-5">About Us</span></a> 
+      <footer class="footer d-flex bg-dark text-light py-5 mt-auto">
+        <a class="me-md-5 footer-link" href="https://github.com/zuri-training/Chunk-File-Team-47/tree/main"><span>GitHub</span></a>
+        <img class="me-md-5 footer-image" src="/Chunkrio Frontend/img/logo-alt.png">
+        <a class="footer-link" href="./getting-started.html"><span class="">About Us</span></a> 
       </footer>
     </div>
   </section>
-
-
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 </body>
+</html>
