@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
-    /* border: 1px solid red; */
 }
 
 html {
@@ -18,7 +17,6 @@ body {
     min-height: 100vh;
 }
 
-/* STYLING FOR TEAM PAGE STARTS HERE */
 /* navbar */
  nav {
     background-color: #fff;
@@ -100,10 +98,6 @@ body {
     letter-spacing: 0.14em;
     color: #0F0F0D;
 }
-/* team gallery */
-/* .rounded-circle {
-    width: 33%
-} */
 
 .team-img {
     width: 100%;
@@ -202,9 +196,6 @@ li {
 }
 
 @media (min-width: 600px) and (max-width: 990px) {
-    /* .row {
-        display: flex;
-    }  */
     .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
         height: auto;
         width: 30%;
