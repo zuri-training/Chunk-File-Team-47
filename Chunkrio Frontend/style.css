@@ -207,23 +207,9 @@ footer {
     font-family: inter,sans-serif;
 } */
 
-hr {
-    border-width: 4px;
-    color:#FFFFFF;
-}
-
-.footer-image {
-    width: 20%;
-}
-
 /* .modal-content {
     width: 100%;
 } */
-
-input {
-    font-family: 'Manrope',sans-serif;
-    font-size: 12px;  
-}
 
 /* .modal-dialog { 
     font-family: manrope,sans-serif;
@@ -233,6 +219,45 @@ input {
     border-bottom: none;
     margin-bottom: -3vw;
 } */
+
+/* .close {
+    position: absolute;
+    left: 454px;
+    top: 25px;
+}
+
+.close1 {
+    position: absolute;
+    left: 457px;
+    top: 30px;
+} 
+
+.btn-close { 
+    border: 2px solid #292D32;
+    width: 20px;
+    height: 20px;
+} */
+
+
+hr {
+    border-width: 4px;
+    color:#FFFFFF;
+}
+
+.footer-image {
+    width: 20%;
+}
+
+.footer-link, .footer-link:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+input {
+    font-family: 'Manrope',sans-serif;
+    font-size: 12px;  
+}
 
 .username-mod1 {
     margin-top: -5px;
@@ -257,23 +282,6 @@ input {
 .p-reset {
     margin-bottom: 70px;
 }
-/* .close {
-    position: absolute;
-    left: 454px;
-    top: 25px;
-}
-
-.close1 {
-    position: absolute;
-    left: 457px;
-    top: 30px;
-} 
-
-.btn-close { 
-    border: 2px solid #292D32;
-    width: 20px;
-    height: 20px;
-} */
 
 a {
     text-decoration: none;
