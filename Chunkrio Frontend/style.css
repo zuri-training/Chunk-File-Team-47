@@ -489,10 +489,19 @@ class and ui-labels class */
         width: 100%;
     } */
 
-@media (min-width: 320px) and (max-width: 425px){
-    .text-start.sign-up, .dont-have {
-        font-size: 13px;
-    }
+    @media (min-width: 600px) and (max-width: 991px) {
+        .row {
+            display: flex;
+            margin-top: -22px;
+        } 
+        .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
+            height: auto;
+            width: 30%;
+        }
+        .footer-image{
+            width: 40%;
+        }
+} 
     
  /* signup */
 @media (min-width: 320px) and (max-width: 425px) {
@@ -518,18 +527,4 @@ class and ui-labels class */
     .ui-widgets{
         border:none
     }
-
-@media (min-width: 600px) and (max-width: 991px) {
-    .row {
-        display: flex;
-        margin-top: -22px;
-    } 
-    .img-fluid.col-lg-3, .img-fluid.col-lg-2, .img-fluid.col-lg-4 {
-        height: auto;
-        width: 30%;
-    }
-    .footer-image{
-        width: 40%;
-    }
-} 
 /* MEDIA QUERIES FOR LANDING PAGE ENDS HEERE*/
