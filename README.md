@@ -1,3 +1,15 @@
+
+
+
+FOR DEPLOYMENT THE Chunkr-Backend IS THE MAIN FOLDER, ALL THE FRONTEND HAS BEEN RENDERED THROUGH TEMPLATING IN THE BACKEND FOLDER
+
+
+
+
+
+
+
+
 Chunkr.io
 This is a platform that accepts CSV or JSON large files, and break them into smaller bits. Read below for better understanding. ⬇
 
