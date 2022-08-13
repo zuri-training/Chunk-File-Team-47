@@ -3,6 +3,84 @@
 
 FOR DEPLOYMENT THE Chunkr-Backend IS THE MAIN FOLDER, ALL THE FRONTEND HAS BEEN RENDERED THROUGH TEMPLATING IN THE BACKEND FOLDER
 
+## Run locally
+​
+If you want to run locally, then you can use the following commands on your machine:
+​
+​
+
+Clone the project
+```
+  git clone https://github.com/zuri-training/Chunk-File-Team-47.git
+```
+​
+Go to the project directory
+```
+  cd Chunk-File-Team-47
+```
+Go to the backend directory
+```
+  cd Chunkr-Backend
+```
+​
+Create a Virtual Environment 
+```
+python -m venv env
+```
+​
+Activate Virtual Environment
+```
+env\scripts\activate
+```
+​
+Install Dependencies
+```
+  pip install -r requirements.txt
+  pip install crispy-bootstrap5
+  pip install pandas
+```
+​
+Comment out the Mongodb database configuration in settings.py and uncomment the one for sqlite
+​
+
+​
+make migrations
+```
+python manage.py makemigrations chunkrio
+```
+​
+Migrate the database
+```
+python manage.py migrate
+```
+​
+create superuser 
+```
+python manage.py createsuperuser
+```
+​
+Create a new branch to work with
+```
+git branch <new-branch>
+```
+​
+switch to the new branch to make changes
+```
+git checkout <new-branch>
+```
+​
+Finally, Start The Server.
+```
+python manage.py runserver
+```
+
+
+
+
+
+
+
+
 
 
 
