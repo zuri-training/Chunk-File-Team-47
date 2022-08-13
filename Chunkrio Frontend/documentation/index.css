@@ -5,8 +5,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
-  font-family: 'Manrope'; 
+  box-sizing: border-box;
+  font-family: 'Manrope';
   /* border: 1px solid red; */
 }
 
@@ -69,13 +69,13 @@ a {
 }
 
 a:active {
-  background-color:rgb(208, 223, 233); 
+  background-color: rgb(208, 223, 233);
   border-left: 1px solid black;
-  padding:10px;
+  padding: 10px;
 }
 
 .brand {
-  margin-bottom: 50px ;
+  margin-bottom: 50px;
   margin-top: 20px;
 }
 
@@ -123,7 +123,8 @@ li {
   margin-bottom: 26px;
 }
 
-.auth-user, .unauth-user {
+.auth-user,
+.unauth-user {
   font-weight: 500;
   margin-bottom: 36px;
   color: #2C2D28;
@@ -157,7 +158,8 @@ li {
   width: 100%;
 }
 
-.footer-link, .footer-link:hover {
+.footer-link,
+.footer-link:hover {
   color: #4F504C;
   font-size: 18px;
   font-weight: 500;
@@ -169,238 +171,527 @@ li {
 }
 
 /* RESPONSIVE */
-@media (min-width: 600px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px) {
   .nav-brand {
     padding-left: 9px;
     padding-right: 12px;
-    }
-    .navbar {
-      padding-left: 10px;
-    }
-    .navbar-brand img {
-      width: 35%;
-    }
-    .pt-4 {
-      padding-top: 0px;
-    }  
-    .section {
-      padding-left: 13%;
-    }
-    .section-head {
-      font-size: 13px;
-    }
-    .point {
-      font-size: 20px;
-    }
-    .point img {
-      width: 4%;
-    }
-    .sub-point {
-      font-size: 19px;
-    }
-    .footer-image {
+  }
+
+  .navbar {
+    padding-left: 10px;
+  }
+
+  .navbar-brand img {
     width: 35%;
   }
+
+  .section-head {
+    font-size: 20px;
+  }
+
+  .chunkr-guide {
+    margin-left: 10px;
+  }
+
+  .section {
+    padding-left: 14%;
+  }
+
+  .point img {
+    width: 4%;
+  }
+
+  .footer-image {
+    width: 35%;
+  }
+
   .faq-cont {
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+
+  .faq {
+    margin-left: 18px;
+    margin-top: 62px;
+  }
+
+  .intro-head,
+  .get-head,
+  .howit-works-head,
+  .howto-split-head {
+    margin-top: 32px;
   }
 }
 
-@media (min-width: 414px) and (max-width: 599px){
+@media (min-width: 600px) and (max-width: 768px) {
   .nav-brand {
     padding-left: 9px;
     padding-right: 12px;
-    }
-    .navbar {
-      padding-left: 10px;
-    }
-    .navbar-brand img {
-      width: 35%;
-    }
-    .chunkr-guide{
-      margin-top: 15px;
-    }
-    .sidebar-link {
-      padding-left: 14%;
-    }
-    .pt-4 {
-      padding-top: 0px;
-    }  
-    .section {
-      padding-left: 1%;
-    }
-    .section-info {
-      margin-top: -40px;
-    }
-    .section-head {
-      font-size: 11px;
-    }
-    .point {
-      font-size: 20px;
-    }
-    .point img {
-      width: 6%;
-    }
-    .sub-point {
-      font-size: 14px;
-    }
-    .footer-link {
-      font-size: 10px;
-      margin-right: 16px;
-    }
-    .footer-image {
-      width: 35%;
-      margin-right: 16px;
-    }
-    .howto-split {
-      margin-bottom: 20px !important;
-      font-size: 24px;
-    }
-    .auth-user, .unauth-user {
-      margin-bottom: 8px;
-     font-size: 16px;
-    }
-    .unauth-user {
-      margin-top: 30px;
-    }
-    .faq-que, .faq-ans {
-      font-size: 12px;
-    }
-} 
+  }
 
-@media (min-width: 376px) and (max-width: 413px){
-  .nav-brand {
-    padding-left: 9px;
-    padding-right: 12px;
-    }
-    .navbar {
-      padding-left: 10px;
-      margin-left: 30%;
-    }
-    .navbar-brand img {
-      width: 35%;
-    }
-    .chunkr-guide{
-      margin-top: 15px;
-    }
-    .side-bar {
-      width: 30%;
-    }
-    .sidebar-link {
-      padding-left: 14%;
-    }
-    .pt-4 {
-      padding-top: 0px;
-    }  
-    .section {
-      padding-left: 12%;
-      margin-top: -35px;
-    }
-    .section-info {
-      margin-top: -40px;
-    }
-    .section-head {
-      font-size: 11px;
-    }
-    .point {
-      font-size: 13px;
-    }
-    .point img {
-      width: 6%;
-    }
-    .sub-point {
-      font-size: 9px;
-    }
-    .footer-link {
-      font-size: 10px;
-      margin-right: 16px;
-    }
-    .footer-image {
-      width: 35%;
-      margin-right: 16px;
-    }
+  .navbar {
+    padding-left: 10px;
+  }
+
+  .navbar-brand img {
+    width: 35%;
+  }
+
+  .section {
+    padding-left: 13%;
+  }
+
+  .section-head {
+    font-size: 19px;
+  }
+
+  .chunkr-guide {
+    margin-left: 16px;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+  .point {
+    font-size: 26px;
+  }
+
+  .point img {
+    width: 4%;
+  }
+
+  .sub-point {
+    font-size: 19px;
+  }
+
+  .footer-image {
+    width: 35%;
+  }
+
+  .faq-cont {
+    margin-top: 40px;
+  }
+
+  .faq {
+    margin-left: 16px;
+    margin-top: 62px;
+  }
+
+  .intro-head,
+  .get-head,
+  .howit-works-head,
+  .howto-split-head {
+    margin-top: 32px;
+  }
 }
 
-@media (min-width: 280px) and (max-width: 375px){
+@media (min-width: 426px) and (max-width: 599px) {
   .nav-brand {
     padding-left: 9px;
     padding-right: 12px;
-    }
-    .navbar {
-      padding-left: 10px;
-      margin-left: 30%;
-    }
-    .navbar-brand img {
-      width: 35%;
-    }
-    .chunkr-guide{
-      margin-top: 15px;
-    }
-    .side-bar {
-      width: 30%;
-    }
-    .sidebar-link {
-      padding-left: 14%;
-    }
-    .pt-4 {
-      padding-top: 0px;
-    }  
-    .section {
-      padding-left: 9%;
-      margin-top: -35px;
-    }
-    .section-info {
-      margin-top: -40px;
-    }
-    .section-head {
-      font-size: 11px;
-    }
-    .point {
-      font-size: 13px;
-    }
-    .point img {
-      width: 6%;
-    }
-    .sub-point {
-      font-size: 9px;
-    }
-    .footer-link {
-      font-size: 8px;
-      margin-right: 10px;
-    }
-    .footer-image {
-      width: 35%;
-      margin-right: 10px;
-    }
-    .get-started {
-      width: 130px;
-      height: 42px;
-      font-size: 14px;
-    }
-    .howto-split {
-      font-size: 20px;
-      margin-bottom: 26px;
-    }
-    .auth-user, .unauth-user {
-      font-size: 13px;
-      margin-bottom: 0px;
-    }
-    .unauth-user {
-      margin-top: 15px;
-    }
-    .faq {
-      font-size: 20px;
-    }
-    .faq-que, .faq-ans {
-      font-size: 12px;
-    }
+  }
+
+  .navbar {
+    padding-left: 10px;
+  }
+
+  .navbar-brand img {
+    width: 35%;
+  }
+
+  .chunkr-guide {
+    margin-top: 15px;
+  }
+
+  .sidebar-link {
+    padding-left: 14%;
+  }
+
+  .pt-4 {
+    padding-top: 0px;
+  }
+
+  .section {
+    padding-left: 1%;
+  }
+
+  .section-head {
+    font-size: 11px;
+  }
+
+  .point {
+    font-size: 20px;
+  }
+
+  .point img {
+    width: 6%;
+  }
+
+  .sub-point {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 10px;
+    margin-right: 16px;
+  }
+
+  .footer-image {
+    width: 35%;
+    margin-right: 16px;
+  }
+
+  .howto-split {
+    margin-bottom: 20px !important;
+    font-size: 24px;
+  }
+
+  .auth-user,
+  .unauth-user {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .unauth-user {
+    margin-top: 30px;
+  }
+
+  .faq-que,
+  .faq-ans {
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 376px) and (max-width: 425px) {
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+  }
+
+  .navbar {
+    padding-left: 10px;
+    margin-left: 30%;
+  }
+
+  .navbar-brand img {
+    width: 45%;
+  }
+
+  .chunkr-guide {
+    margin-top: 15px;
+    margin-left: -12px;
+  }
+
+  .chunkr-guide1 {
+    margin-right: -12px;
+  }
+
+  .side-bar {
+    width: 30%;
+  }
+
+  .sidebar-link {
+    padding-left: 14%;
+  }
+
+  .section {
+    padding-left: 12%;
+    margin-top: -35px;
+  }
+
+  .section-info {
+    margin-top: -40px;
+  }
+
+  .intro-head,
+  .get-head,
+  .howit-works-head,
+  .howto-split-head {
+    margin-top: 39px;
+  }
+
+  .section-head {
+    font-size: 11px;
+  }
+
+  .point {
+    font-size: 13px;
+  }
+
+  .point img {
+    width: 6%;
+  }
+
+  .sub-point {
+    font-size: 9px;
+    margin-bottom: 30px;
+  }
+
+  .get-started {
+    width: 108px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 0px 0px 35px 0px;
+  }
+
+  .auth-user, .unauth-user {
+    font-size: 12px;
+    margin-bottom: 0px
+  }
+
+  .footer-link {
+    font-size: 10px;
+    margin-right: 16px;
+  }
+
+  .footer-image {
+    width: 35%;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+  }
+
+  .navbar {
+    padding-left: 10px;
+    margin-left: 30%;
+  }
+
+  .navbar-brand img {
+    width: 45%;
+  }
+
+  .chunkr-guide {
+    margin-top: 15px;
+    margin-left: -19px;
+  }
+
+  .chunkr-guide1 {
+    margin-right: -12px;
+  }
+
+  .side-bar {
+    width: 30%;
+  }
+
+  .sidebar-link {
+    padding-left: 14%;
+  }
+
+  .pt-4 {
+    padding-top: 0px;
+  }
+
+  .section {
+    padding-left: 6%;
+    margin-top: -35px;
+  }
+
+  .section-info {
+    margin-top: -34px;
+  }
+
+  .section-head {
+    font-size: 12px;
+  }
+
+  .intro-head {
+    margin-top: 32px;
+  }
+
+  .point {
+    font-size: 13px;
+  }
+
+  .point img {
+    width: 6%;
+  }
+
+  .sub-point {
+    font-size: 9px;
+    margin-bottom: 30px;
+  }
+
+  .intro-head,
+  .get-head,
+  .howit-works-head,
+  .howto-split-head {
+    margin-top: 39px;
+  }
+
+  .footer-link {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+
+  .footer-image {
+    width: 35%;
+    margin-right: 10px;
+  }
+
+  .get-started {
+    width: 108px;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin: 12px 0px 38px 0px;
+  }
+
+  .howto-split {
+    font-size: 20px;
+    margin-bottom: 26px;
+  }
+
+  .auth-user,
+  .unauth-user {
+    font-size: 13px;
+    margin-bottom: 0px;
+  }
+
+  .unauth-user {
+    margin-top: 15px;
+  }
+
+  .faq {
+    font-size: 20px;
+  }
+
+  .faq-que,
+  .faq-ans {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 320px) {
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+  }
+
+  .navbar {
+    padding-left: 10px;
+    margin-left: 30%;
+  }
+
+  .navbar-brand img {
+    width: 45%;
+  }
+
+  .chunkr-guide {
+    margin-top: 15px;
+    margin-left: 6px;
+  }
+
+  .chunkr-guide-f {
+    margin-top: 15px;
+    margin-left: -6px;
+  }
+
+  .chunkr-guide1 {
+    margin-right: -12px;
+  } 
+
+  .side-bar {
+    width: 30%;
+  }
+
+  .sidebar-link {
+    padding-left: 14%;
+  }
+
+  .pt-4 {
+    padding-top: 0px;
+  }
+
+  .section {
+    padding-left: 6%;
+    margin-top: -35px;
+  }
+
+  .section-info {
+    margin-top: -34px;
+  }
+
+  .section-head {
+    font-size: 12px;
+  }
+
+  .intro-head {
+    margin-top: 32px;
+  }
+
+  .point {
+    font-size: 13px;
+  }
+
+  .point img {
+    width: 6%;
+  }
+
+  .sub-point {
+    font-size: 8px;
+    margin-bottom: 30px;
+  }
+
+  .intro-head,
+  .get-head,
+  .howit-works-head,
+  .howto-split-head {
+    margin-top: 39px;
+  }
+  
+  .footer-link {
+    font-size: 8px;
+    margin-right: 10px;
+  }
+
+  .footer-image {
+    width: 35%;
+    margin-right: 10px;
+  }
+
+  .get-started {
+    width: 83px;
+    height: 33px;
+    font-size: 10px;
+    margin: -4px 0px 31px 0px;
+    border-radius: 8px;
+  }
+
+  .howto-split {
+    font-size: 16px;
+  }
+
+  .auth-user,
+  .unauth-user {
+    font-size: 11px;
+    margin-bottom: 0px;
+  }
+
+  .unauth-user {
+    margin-top: 15px;
+  }
+
+  .faq {
+    font-size: 20px;
+  }
+
+  .faq-que,
+  .faq-ans {
+    font-size: 12px;
+  }
 }
 
 /* this is needed to make the content scrollable 
 on larger screens */
 @media (min-width: 576px) {
   .h-sm-100 {
-      height: 100%;
+    height: 100%;
   }
 }
-
