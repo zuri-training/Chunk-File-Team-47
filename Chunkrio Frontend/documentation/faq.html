@@ -12,184 +12,218 @@
 </head>
 
 <body>
-
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-6">
-    <!-- <div class="container"> -->
-      <div class="navbar-brand">
-        <!-- <h2 class="Guide">CHUNKr.<span class="text-muted">iO</span> Guide</h2> -->
-        <img src="./images/CHUNKr.iO Guide.svg" style="width:70% ;" alt="">
-       </div>
-
-       <div class="bg-danger">
-       <!-- </div> -->
-  
+    <div class="navbar-brand">
+      <div class="container nav-brand">
+        <img class="mt-md-5 chunkr-guide" src="/Chunkrio Frontend/img/Documentation Pages/CHUNKr.iO Guide.svg">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Documentation Illustration.svg">
+      </div>
+    </div>
   </nav>
+
   <div class="side-bar">
-
     <div class="sidebar-link brand">
-      <img src="./images/Chunkr.iO back button.svg" class="img-fluid" style="width:60% ;" alt="">
-      <!-- <p>CHUNKr.<span class="text-muted">iO</span></p> -->
-    </div>
-    <div class="sidebar-link">
-     <a href="./index.html"> <p> Introduction</p> </a>
-    </div>
-    <div class="sidebar-link">
-      <a href="./getting-started.html">  <p>Getting Started</p>
+      <a href="/Chunkrio Frontend/home.html">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Chunkr.iO back button.svg" class="img-fluid"
+          style="width: 100% ;" alt="">
       </a>
     </div>
     <div class="sidebar-link">
-      <a href="./How it works.html"> 
-        <p class="text-start">How the tool works</p>
+      <a href="/Chunkrio Frontend/documentation/introduction.html">
+        <p class="section-head">Introduction</p>
       </a>
     </div>
     <div class="sidebar-link">
-      <a href="./how-split.html">
-        <p>How to split files</p>
+      <a href="/Chunkrio Frontend/documentation/getting-started.html">
+        <p class="section-head">Getting Started</p>
       </a>
     </div>
-    <div class="sidebar-link" >
-      <a href="./faq.html" style="background-color:rgb(208, 223, 233); border-left:2px solid black; padding:10px;" >
-        <p>FAQs</p>
+    <div class="sidebar-link">
+      <a href="./how-it-works.html">
+        <p class="text-start section-head">How the tool works</p>
       </a>
     </div>
-  </div>
-        <section class="row overflow-auto section">
-          <div class="container">
-          <div class="col pt-4">
-            <h3 class="my-3">FAQs</h3>
+    <div class="sidebar-link">
+      <a href="./how-to-split.html">
+        <p class="section-head">How to split files</p>
+      </a>
+    </div>
+    <div class="sidebar-link">
+      <a href="./faq.html">
+        <p class="section-head">FAQs</p>
+      </a>
+    </div>
 
-            <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    What is Chunkr.io?
-                  </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Chunkr.io is the easiest way to split CSV and JSON files into multiple pieces. You upload a file, specify how you want it chunked up, and boom! We give you the chunks you asked for.
-                  </div>
-                </div>
+  </div>
+
+  <section class="row overflow-auto section">
+    <div class="container">
+      <div class="col faq-cont pt-4">
+        <h3 class="my-3 faq">FAQs</h3>
+
+        <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Chunkr.io?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Chunkr.io is the easiest way to split CSV and JSON files into multiple pieces.
+                You upload a file, specify how you want it chunked up, and boom! We give you the chunks you asked for.
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    Why does this exist?
-                  </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">To provide a clean, efficient, secure, simple way to split CSV and JSON files. -->
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Can anybody access it?
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Only authenticated users can access the splitting tool by signing up.
-                  </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingfour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Do I need to sign up or create an account?
-                </button>
-              </h2>
-              <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Yes. You need to create an account to let you split, track, save and download your file splits.
-                </div>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Why does this exist?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">To provide a clean, efficient, secure, simple way to split CSV and JSON files.
+                -->
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Can anybody access it?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Only authenticated users can access the splitting tool by signing up.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingfour">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapseThree">
+                Do I need to sign up or create an account?
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Yes. You need to create an account to let you split, track, save and download
+                your file splits.
+              </div>
+            </div>
+          </div>
+
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingfive">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapseThree">
                 What method of splitting can I use on Chunkr.iO?
               </button>
             </h2>
-            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Chunkr.iO allows splitting by selecting a preferred chunk size and proceeding to split them into required size.
+            <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Chunkr.iO allows splitting by selecting a preferred chunk size and proceeding
+                to split them into required size.
               </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingsix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Is there a limit to the size of file I can upload for splitting?
-            </button>
-          </h2>
-          <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Yes, there is a limit to the size of uploadable files. This is to avoid clouding up the tool system and breaking the platform.
             </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingseven">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseThree">
-            Is there a limit to the size of file I can upload for splitting?
-          </button>
-        </h2>
-        <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Yes, there is a limit to the size of uploadable files. This is to avoid clouding up the tool system and breaking the platform.
           </div>
-      </div>
-    </div>
 
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingeight">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseTwo">
-          How do I download splitted files?
-        </button>
-      </h2>
-      <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">User can access the download option immediately after splitting. In the case of stored files, user can click on the options icon to display the download option.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingnine">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Can I split other type of files apart from CSV and JSON?
-        </button>
-      </h2>
-      <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingeight" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Chunkr.iO is working towards providing users with more splitting tools for other file formats like txt. Updates carrying this new feature will be released in the nearest future.
-        </div>
-      </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingten">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseten" aria-expanded="false" aria-controls="flush-collapseTwo">
-          How long is my splitted file retained if I don’t save it?
-        </button>
-      </h2>
-      <div id="flush-collapseten" class="accordion-collapse collapse" aria-labelledby="flush-headingten" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Our default data retention policy is for all content (uploaded files and output files) to be deleted 24 hours after the split is complete. Any deleted data is permanently removed and can not be recovered.
-        </div>
-      </div>
-    </div>
-
-   
-   </div>
-
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingsix">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Is there a limit to the size of file I can upload for splitting?
+              </button>
+            </h2>
+            <div id="flush-collapsesix" class="accordion-collapse collapse" aria-labelledby="flush-headingsix"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Yes, there is a limit to the size of uploadable files. This is to avoid
+                clouding up the tool system and breaking the platform.
+              </div>
+            </div>
+          </div>
           
-          <footer class="footer d-flex bg-dark text-light py-4 mt-auto">
-              <p class="me-5">GitHub</p>  
-              <p class="me-5">CHUNKr.iO</p>
-              <p class="me-5">About Us</p>
-          </footer>
-        </div>
-        </section>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingseven">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseseven" aria-expanded="false" aria-controls="flush-collapseThree">
+                Is there a limit to the size of file I can upload for splitting?
+              </button>
+            </h2>
+            <div id="flush-collapseseven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Yes, there is a limit to the size of uploadable files. This is to avoid
+                clouding up the tool system and breaking the platform.
+              </div>
+            </div>
+          </div>
 
-        
-        
-   
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingeight">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseeight" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How do I download splitted files?
+              </button>
+            </h2>
+            <div id="flush-collapseeight" class="accordion-collapse collapse" aria-labelledby="flush-headingeight"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">User can access the download option immediately after splitting. In the case
+                of stored files, user can click on the options icon to display the download option.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingnine">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsenine" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Can I split other type of files apart from CSV and JSON?
+              </button>
+            </h2>
+            <div id="flush-collapsenine" class="accordion-collapse collapse" aria-labelledby="flush-headingeight"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Chunkr.iO is working towards providing users with more splitting tools for
+                other file formats like txt. Updates carrying this new feature will be released in the nearest future.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingten">
+              <button class="accordion-button collapsed faq-que" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseten" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How long is my splitted file retained if I don’t save it?
+              </button>
+            </h2>
+            <div id="flush-collapseten" class="accordion-collapse collapse" aria-labelledby="flush-headingten"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body faq-ans">Our default data retention policy is for all content (uploaded files and
+                output files) to be deleted 24 hours after the split is complete. Any deleted data is permanently
+                removed and can not be recovered.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer d-flex bg-dark text-light py-5 mt-auto">
+          <a class="me-md-5 footer-link" href="https://github.com/zuri-training/Chunk-File-Team-47/tree/main"><span>GitHub</span></a>
+          <img class="me-md-5 footer-image" src="/Chunkrio Frontend/img/logo-alt.png">
+          <a class="footer-link" href="./getting-started.html"><span class="">About Us</span></a> 
+        </footer>
+      </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
 </body>
+</html>

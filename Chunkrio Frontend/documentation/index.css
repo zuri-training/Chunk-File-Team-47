@@ -30,12 +30,16 @@ body {
   margin: 0px 26px -6px 0px;
   padding: 0px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  z-index: 1000;
 }
 
 .navbar-brand img {
   width: 25%;
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* sidebar */
@@ -66,7 +70,7 @@ a {
 
 a:active {
   background-color:rgb(208, 223, 233); 
-  border-left:2px solid black;
+  border-left: 1px solid black;
   padding:10px;
 }
 
@@ -75,11 +79,11 @@ a:active {
   margin-top: 20px;
 }
 
-/* .section-head {
+.section-head {
   font-weight: 500;
   font-size: 24px;
-  color: #252621;
-} */
+  color: #4F504C;
+}
 
 .point {
   font-weight: 700;
@@ -87,31 +91,313 @@ a:active {
   color: #1D1E1B;
 }
 
-
+.sub-point {
+  color: #4F504C;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: justify;
+}
 
 /* body */
 .section {
   padding-left: 17%;
 }
 
-.btn-n {
-  background-color: #000;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 6px;
+.get-started {
+  width: 240px;
+  height: 56px;
+  font-weight: 700;
+  margin-left: 23%;
+  margin-top: 24px;
+  margin-bottom: 70px;
+  border-radius: 16px;
 }
 
 li {
   line-height: 40px;
 }
 
-.footer {
-  padding-left: 35%;
-  padding-right: 25%;
+.howto-split {
+  color: #1D1E1B;
+  font-weight: 700;
+  margin-bottom: 26px;
 }
-/* INTRODUCTION PAGE ENDS HERE */
 
-/* this is needed to make the content scrollable on larger screens */
+.auth-user, .unauth-user {
+  font-weight: 500;
+  margin-bottom: 36px;
+  color: #2C2D28;
+}
+
+.unauth-user {
+  margin-top: 68px;
+}
+
+.faq {
+  color: #1D1E1B;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.faq-que {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C2D28;
+}
+
+.faq-ans {
+  font-size: 20px;
+  font-weight: 500;
+  color: #4F504C;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-link, .footer-link:hover {
+  color: #4F504C;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.footer-image {
+  width: 25%;
+}
+
+/* RESPONSIVE */
+@media (min-width: 600px) and (max-width: 1024px){
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+    }
+    .navbar {
+      padding-left: 10px;
+    }
+    .navbar-brand img {
+      width: 35%;
+    }
+    .pt-4 {
+      padding-top: 0px;
+    }  
+    .section {
+      padding-left: 13%;
+    }
+    .section-head {
+      font-size: 13px;
+    }
+    .point {
+      font-size: 20px;
+    }
+    .point img {
+      width: 4%;
+    }
+    .sub-point {
+      font-size: 19px;
+    }
+    .footer-image {
+    width: 35%;
+  }
+  .faq-cont {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 599px){
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+    }
+    .navbar {
+      padding-left: 10px;
+    }
+    .navbar-brand img {
+      width: 35%;
+    }
+    .chunkr-guide{
+      margin-top: 15px;
+    }
+    .sidebar-link {
+      padding-left: 14%;
+    }
+    .pt-4 {
+      padding-top: 0px;
+    }  
+    .section {
+      padding-left: 1%;
+    }
+    .section-info {
+      margin-top: -40px;
+    }
+    .section-head {
+      font-size: 11px;
+    }
+    .point {
+      font-size: 20px;
+    }
+    .point img {
+      width: 6%;
+    }
+    .sub-point {
+      font-size: 14px;
+    }
+    .footer-link {
+      font-size: 10px;
+      margin-right: 16px;
+    }
+    .footer-image {
+      width: 35%;
+      margin-right: 16px;
+    }
+    .howto-split {
+      margin-bottom: 20px !important;
+      font-size: 24px;
+    }
+    .auth-user, .unauth-user {
+      margin-bottom: 8px;
+     font-size: 16px;
+    }
+    .unauth-user {
+      margin-top: 30px;
+    }
+    .faq-que, .faq-ans {
+      font-size: 12px;
+    }
+} 
+
+@media (min-width: 376px) and (max-width: 413px){
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+    }
+    .navbar {
+      padding-left: 10px;
+      margin-left: 30%;
+    }
+    .navbar-brand img {
+      width: 35%;
+    }
+    .chunkr-guide{
+      margin-top: 15px;
+    }
+    .side-bar {
+      width: 30%;
+    }
+    .sidebar-link {
+      padding-left: 14%;
+    }
+    .pt-4 {
+      padding-top: 0px;
+    }  
+    .section {
+      padding-left: 12%;
+      margin-top: -35px;
+    }
+    .section-info {
+      margin-top: -40px;
+    }
+    .section-head {
+      font-size: 11px;
+    }
+    .point {
+      font-size: 13px;
+    }
+    .point img {
+      width: 6%;
+    }
+    .sub-point {
+      font-size: 9px;
+    }
+    .footer-link {
+      font-size: 10px;
+      margin-right: 16px;
+    }
+    .footer-image {
+      width: 35%;
+      margin-right: 16px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 375px){
+  .nav-brand {
+    padding-left: 9px;
+    padding-right: 12px;
+    }
+    .navbar {
+      padding-left: 10px;
+      margin-left: 30%;
+    }
+    .navbar-brand img {
+      width: 35%;
+    }
+    .chunkr-guide{
+      margin-top: 15px;
+    }
+    .side-bar {
+      width: 30%;
+    }
+    .sidebar-link {
+      padding-left: 14%;
+    }
+    .pt-4 {
+      padding-top: 0px;
+    }  
+    .section {
+      padding-left: 9%;
+      margin-top: -35px;
+    }
+    .section-info {
+      margin-top: -40px;
+    }
+    .section-head {
+      font-size: 11px;
+    }
+    .point {
+      font-size: 13px;
+    }
+    .point img {
+      width: 6%;
+    }
+    .sub-point {
+      font-size: 9px;
+    }
+    .footer-link {
+      font-size: 8px;
+      margin-right: 10px;
+    }
+    .footer-image {
+      width: 35%;
+      margin-right: 10px;
+    }
+    .get-started {
+      width: 130px;
+      height: 42px;
+      font-size: 14px;
+    }
+    .howto-split {
+      font-size: 20px;
+      margin-bottom: 26px;
+    }
+    .auth-user, .unauth-user {
+      font-size: 13px;
+      margin-bottom: 0px;
+    }
+    .unauth-user {
+      margin-top: 15px;
+    }
+    .faq {
+      font-size: 20px;
+    }
+    .faq-que, .faq-ans {
+      font-size: 12px;
+    }
+}
+
+/* this is needed to make the content scrollable 
+on larger screens */
 @media (min-width: 576px) {
   .h-sm-100 {
       height: 100%;

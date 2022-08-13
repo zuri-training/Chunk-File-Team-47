@@ -12,109 +12,76 @@
 </head>
 
 <body>
-
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light mb-6">
-      <div class="navbar-brand">
-        <h2 class="Guide">CHUNKr.<span class="text-muted">iO</span> Guide</h2>
-       </div>
-
-       <div class="bg-danger"></div>
-  
+    <div class="navbar-brand">
+      <div class="container nav-brand">
+        <img class="mt-md-5 chunkr-guide" src="/Chunkrio Frontend/img/Documentation Pages/CHUNKr.iO Guide.svg">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Documentation Illustration.svg">
+      </div>
+    </div>
   </nav>
+
   <div class="side-bar">
-
     <div class="sidebar-link brand">
-      <p>CHUNKr.<span class="text-muted">iO</span></p>
+        <a href="/Chunkrio Frontend/home.html">
+        <img src="/Chunkrio Frontend/img/Documentation Pages/Chunkr.iO back button.svg" class="img-fluid" style="width: 100% ;" alt="">
+      </a> 
     </div>
     <div class="sidebar-link">
-    <a href="./index.html"> <p>Introduction</p> </a>
+      <a href="/Chunkrio Frontend/documentation/introduction.html"><p class="section-head">Introduction</p></a>
     </div>
     <div class="sidebar-link">
-      <a href="./getting-started.html">  <p>Getting Started</p>
-      </a>
+      <a href="/Chunkrio Frontend/documentation/getting-started.html"><p class="section-head">Getting Started</p></a>
     </div>
     <div class="sidebar-link">
-      <a href="./How it works.html"> 
-        <p>How the tool works</p>
-      </a>
+      <a href="./how-it-works.html"><p class="text-start section-head">How the tool works</p></a>
     </div>
     <div class="sidebar-link">
-      <a href="./how-split.html">
-        <p style="background-color:rgb(208, 223, 233); border-left:2px solid black; padding:10px;">How to split files</p>
-      </a>
+      <a href="./how-to-split.html"><p class="section-head">How to split files</p></a>
     </div>
     <div class="sidebar-link">
-      <a href="./faq.html"><p>FAQs</p></a>
+      <a href="./faq.html"><p class="section-head">FAQs</p></a>
     </div>
+
   </div>
-        <section class="row overflow-auto section">
-          <div class="container">
-          <div class="col pt-4">
-            <h3 class="my-3">How to split files</h3>
-            <p>For an unauthenticated user, you would have to:</p>
 
-            <ul>
-              <li>
-                Sign up/ Create an account
-              </li>
-              <li>
-                Navigate to your dashboard
-              </li>
-              <li>
-                Click on the “Split” button and select the type of file you want to split
-              </li>
-              <li>
-                Upload your file and choose the number of files you want to split it to and split.
-              </li>
-
-              <li>
-                The splitter is going to return your chunked files to your dashboard
-              </li>
-
-              <li>
-                Download and use or save to download later. &#128578;
-              </li>
-            </ul>
-
-            <p class="my-4">For an authenticated user, you would have to:</p>
-
-            <ul>
-              <li>
-                Sign in to your account
-              </li>
-              <li>
-                Navigate to your dashboard
-              </li>
-              <li>
-                Click on the “Split” button and select the type of file you want to split
-              </li>
-              <li>
-                Upload your file and choose the number of files you want to split it to and split.
-              </li>
-              <li>
-                The splitter is going to return your chunked files to your dashboard
-              </li>
-              <li>
-                Download and use or save to download later.&#128578;
-              </li>
-            </ul>
-            
-          </div>
-
+  <section class="row overflow-auto section mt-lg-5 pt-5 mx-0">
+    <div class="container">
+      <div class="col pt-lg-4 pt-md-0 section-info">
+        <h2 class="my-4 howto-split">How to split files</h2>
           
-          <footer class="footer d-flex bg-dark text-light py-4 mt-auto">
-              <p class="me-5">GitHub</p>  
-              <p class="me-5">CHUNKr.iO</p>
-              <p class="me-5">About Us</p>
-          </footer>
-        </div>
-        </section>
+        <h4 class="auth-user">For an unauthenticated user, you would have to:</h4>
+          <ul>
+            <li class="mb-md-4 sub-point">Sign up/ Create an account</li>
+            <li class="mb-md-4 sub-point">Navigate to your dashboard</li>
+            <li class="mb-md-4 sub-point">Click on the “Split” button and select the type of file you want to split</li>
+            <li class="mb-md-4 sub-point">Upload your file and choose the number of files you want to split it to and split.</li>
+            <li class="mb-md-4 sub-point">he splitter is going to return your chunked files to your dashboard</li>
+            <li class="mb-md-4 sub-point"> Download and use or save to download later. &#128578;</li>
+          </ul>
 
-        
-        
-   
+        <h4 class="unauth-user">For an authenticated user, you would have to:</h4>
+          <ul>
+            <li class="mb-md-4 sub-point">Sign in to your account</li>
+            <li class="mb-md-4 sub-point">Navigate to your dashboard</li>
+            <li class="mb-md-4 sub-point">Click on the “Split” button and select the type of file you want to split</li>
+            <li class="mb-md-4 sub-point">Upload your file and choose the number of files you want to split it to and split.</li>
+            <li class="mb-md-4 sub-point">The splitter is going to return your chunked files to your dashboard</li>
+            <li class="mb-md-4 sub-point">Download and use or save to download later.&#128578;</li>
+          </ul>     
+      </div>
+
+      <footer class="footer d-flex bg-dark text-light py-5 mt-auto">
+        <a class="me-md-5 footer-link" href="https://github.com/zuri-training/Chunk-File-Team-47/tree/main"><span>GitHub</span></a>
+        <img class="me-md-5 footer-image" src="/Chunkrio Frontend/img/logo-alt.png">
+        <a class="footer-link" href="./getting-started.html"><span class="">About Us</span></a> 
+      </footer>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
 </body>
+</html>
