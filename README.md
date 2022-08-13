@@ -36,14 +36,14 @@ env\scripts\activate
 Install Dependencies
 ```
   pip install -r requirements.txt
+  or
+  pip install django django-crispy-forms
+  then
   pip install crispy-bootstrap5
   pip install pandas
 ```
 ​
-Comment out the Mongodb database configuration in settings.py and uncomment the one for sqlite
-​
 
-​
 make migrations
 ```
 python manage.py makemigrations chunkrio
