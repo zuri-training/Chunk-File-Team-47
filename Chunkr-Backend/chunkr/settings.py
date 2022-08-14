@@ -80,25 +80,25 @@ WSGI_APPLICATION = 'chunkr.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
- DATABASES = {
-     'default': {
-         'ENGINE': 'django.db.backends.sqlite3',
-         'NAME': BASE_DIR / 'db.sqlite3',
-     }
- }
+#  DATABASES = {
+#      'default': {
+#          'ENGINE': 'django.db.backends.sqlite3',
+#          'NAME': BASE_DIR / 'db.sqlite3',
+#      }
+#  }
 
-#DATABASES = {
-#       'default': {
- #          'ENGINE': 'djongo',
-  #         'CLIENT': {
-   #             'name': 'chunkr_db',
-    #            'host': 'mongodb+srv://chunkr:admin@cluster0.vnzpp.mongodb.net/?retryWrites=true&w=majority',
-     #           'username': 'chunkr',
-      #          'password': 'admin',
-       #         "authMechanism": 'SCRAM-SHA-1',
-        #    },
-       #}
-   #}
+DATABASES = {
+      'default': {
+          'ENGINE': 'djongo',
+          'CLIENT': {
+               'name': 'chunkr_db',
+               'host': 'mongodb+srv://chunkr:admin@cluster0.vnzpp.mongodb.net/?retryWrites=true&w=majority',
+               'username': 'chunkr',
+               'password': 'admin',
+               "authMechanism": 'SCRAM-SHA-1',
+           },
+       }
+   }
 
 
 # Password validation
