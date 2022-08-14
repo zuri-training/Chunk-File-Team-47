@@ -2,7 +2,8 @@
 
 
 FOR DEPLOYMENT THE Chunkr-Backend IS THE MAIN FOLDER, ALL THE FRONTEND HAS BEEN RENDERED THROUGH TEMPLATING IN THE BACKEND FOLDER
-##MongoDB Atlas login details
+
+## MongoDB Atlas login details
 email: alukoayomide623@gmail.com
 password: Ayomide.2022
 
